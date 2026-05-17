@@ -50,6 +50,16 @@ export function Nav() {
           <span style={{ color: "#52504D" }}>{">"}_</span>
           <span style={{ color: "#6EBF9E" }}>EA</span>
         </a>
+
+        <a
+          href="#contact"
+          onClick={(e) => { e.preventDefault(); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }); }}
+          style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#8C8985", textDecoration: "none", letterSpacing: "0.04em", transition: "color 150ms ease" }}
+          onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
+          onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#8C8985")}
+        >
+          Contact ↓
+        </a>
       </div>
 
       <style>{`
