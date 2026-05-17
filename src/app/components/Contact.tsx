@@ -1,3 +1,4 @@
+import { type MouseEvent } from "react";
 import { SectionLabel } from "./SectionLabel";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import photo from "../../imports/eliya-photo.jpg";
@@ -23,7 +24,7 @@ function ContactRow({ label, href, display, external }: { label: string; href: s
 }
 
 function DownloadRow() {
-  const handlePrint = (e: React.MouseEvent) => {
+  const handlePrint = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     window.print();
   };
@@ -76,9 +77,6 @@ export function Contact() {
           <DownloadRow />
         </div>
 
-        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#52504D", marginTop: "64px", marginBottom: 0 }}>
-          © 2026 Eliya Amanoeel
-        </p>
       </div>
       <style>{`
         @media (max-width: 640px) {

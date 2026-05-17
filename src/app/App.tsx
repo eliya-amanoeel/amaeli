@@ -8,6 +8,7 @@ import { Education } from "./components/Education";
 import { PersonalProjects } from "./components/PersonalProjects";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 function setMetaTag(name: string, content: string, property = false) {
   const attr = property ? "property" : "name";
@@ -20,26 +21,8 @@ function setMetaTag(name: string, content: string, property = false) {
   el.content = content;
 }
 
-function setFavicon() {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-    <rect width="32" height="32" rx="6" fill="#0E0F11"/>
-    <rect width="32" height="32" rx="6" fill="none" stroke="#2A2C30" stroke-width="1"/>
-    <text x="7" y="22" font-family="monospace" font-size="13" font-weight="500" fill="#52504D">&#x3E;_</text>
-    <text x="21" y="22" font-family="monospace" font-size="13" font-weight="500" fill="#6EBF9E">EA</text>
-  </svg>`;
-  const url = `data:image/svg+xml,${encodeURIComponent(svg)}`;
-  let link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
-  if (!link) {
-    link = document.createElement("link");
-    link.rel = "icon";
-    document.head.appendChild(link);
-  }
-  link.href = url;
-}
-
 export default function App() {
   useEffect(() => {
-    setFavicon();
     document.title = "Eliya Amanoeel — Senior Developer & Solutions Architect";
     document.documentElement.lang = "en";
     setMetaTag("description", "Senior .NET and SharePoint developer based in Stockholm with 13+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.");
@@ -47,7 +30,7 @@ export default function App() {
     setMetaTag("og:description", "Senior .NET and SharePoint developer based in Stockholm with 13+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.", true);
     setMetaTag("og:url", "https://amaeli.se", true);
     setMetaTag("og:type", "website", true);
-    setMetaTag("og:image", "https://amaeli.se/og-image.svg", true);
+    setMetaTag("og:image", "https://amaeli.se/og-image.png", true);
     setMetaTag("og:image:width", "1200", true);
     setMetaTag("og:image:height", "630", true);
     setMetaTag("twitter:card", "summary");
@@ -68,6 +51,7 @@ export default function App() {
         <Skills />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
