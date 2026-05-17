@@ -56,7 +56,7 @@ export function Contact() {
           <ImageWithFallback
             src={photo}
             alt="Eliya Amanoeel"
-            style={{ width: "72px", height: "72px", objectFit: "cover", borderRadius: "4px", filter: "grayscale(20%)", flexShrink: 0 }}
+            style={{ width: "72px", height: "72px", objectFit: "cover", objectPosition: "50% 15%", borderRadius: "4px", filter: "grayscale(20%)", flexShrink: 0 }}
           />
           <div>
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 500, color: "#F0EDE8", margin: 0, lineHeight: 1.4 }}>
