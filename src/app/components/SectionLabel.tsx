@@ -14,7 +14,7 @@ export function SectionLabel({ number, label }: Props) {
         lineHeight: 1.4,
         color: "#6EBF9E",
         letterSpacing: "0.08em",
-        margin: "0 0 48px 0",
+        margin: "0 0 32px 0",
       }}
     >
       {number} / {label}

@@ -45,7 +45,7 @@ export function PersonalProjects() {
   const [hovered, setHovered] = useState<string | null>(null);
 
   return (
-    <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "96px" }} className="section-pad">
+    <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <SectionLabel number="05" label="PERSONAL PROJECTS" />
         <div>

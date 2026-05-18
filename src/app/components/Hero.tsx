@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      style={{ paddingTop: "160px", paddingBottom: "96px", paddingLeft: "48px", paddingRight: "48px" }}
+      style={{ paddingTop: "120px", paddingBottom: "64px", paddingLeft: "48px", paddingRight: "48px" }}
       className="hero-section"
     >
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
@@ -40,7 +40,7 @@ export function Hero() {
         <a
           href="#work"
           onClick={handleScroll}
-          style={{ display: "inline-block", marginTop: "48px", fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 400, color: "#5B9BD5", textDecoration: "none", letterSpacing: "0.02em" }}
+          style={{ display: "inline-block", marginTop: "32px", fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 400, color: "#5B9BD5", textDecoration: "none", letterSpacing: "0.02em" }}
           onMouseEnter={(e) => ((e.target as HTMLElement).style.textDecoration = "underline")}
           onMouseLeave={(e) => ((e.target as HTMLElement).style.textDecoration = "none")}
         >

@@ -7,10 +7,10 @@ const certifications = [
 
 export function Education() {
   return (
-    <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "96px" }} className="section-pad">
+    <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <SectionLabel number="04" label="EDUCATION" />
-        <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
           <div>
             <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#6EBF9E", margin: "0 0 8px 0", letterSpacing: "0.05em" }}>
               Aug 2011 – Jan 2013
