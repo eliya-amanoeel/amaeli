@@ -12,11 +12,11 @@ const groups = [
   },
   {
     label: "Languages",
-    skills: ["C#", "ASP.NET", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS"],
+    skills: ["C#", ".NET", "ASP.NET", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS"],
   },
   {
     label: "Tools & DevOps",
-    skills: ["Azure DevOps", "DevOps Pipelines", "Visual Studio", "VS Code", "TFS", "GIT", "BizTalk", "DocAve", "Scrum", "Agile"],
+    skills: ["Azure DevOps", "DevOps Pipelines", "Visual Studio", "VS Code", "Figma", "TFS", "GIT", "BizTalk", "DocAve", "Scrum", "Agile"],
   },
   {
     label: "Practices",

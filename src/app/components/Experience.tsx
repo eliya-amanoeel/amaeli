@@ -8,15 +8,11 @@ interface Entry {
 }
 
 const entries: Entry[] = [
-  { dates: "2024", client: "Försvarsmakten · CAG Arete", role: "Fullstack .NET Developer", linkedWork: "#work-forsvarsmakten-fullstack" },
-  { dates: "2019 – present", client: "Försvarsmakten · CAG Arete", role: "SharePoint Developer", linkedWork: "#work-forsvarsmakten-sharepoint" },
-  { dates: "2016 – 2019", client: "Trafikverket · CGI Sverige", role: "SharePoint Developer & Migration Architect", linkedWork: "#work-trafikverket" },
   { dates: "2015 – 2018", client: "Stockholm Stad · CGI Sverige", role: ".NET Developer" },
   { dates: "Apr – Nov 2016", client: "Skatteverket · CGI Sverige", role: "PowerShell Developer" },
   { dates: "May – Jun 2016", client: "Valmyndigheten · CGI Sverige", role: "Requirements Analyst" },
   { dates: "2015 – 2016", client: "CGI Collaboration Platform (CCP) · CGI Sverige", role: "SharePoint Online Developer" },
   { dates: "2013 – 2019", client: "IVO — Inspektionen för Vård och Omsorg · CGI Sverige", role: "SharePoint Developer" },
-  { dates: "Jun 2013 – Sep 2019", client: "Receptkontroll — IVO · CGI Sverige", role: ".NET & SharePoint Developer", linkedWork: "#work-receptkontroll" },
   { dates: "2013 – 2014", client: "Alecta · CGI Sverige", role: "SharePoint Consultant & On-site Support" },
   { dates: "2012 – 2013", client: "Cybercom", role: "Trainee SharePoint Developer" },
 ];
