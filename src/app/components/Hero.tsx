@@ -1,3 +1,7 @@
+import { TechTag } from "./TechTag";
+
+const keySkills = ["C#", ".NET", "SharePoint", "Azure", "Angular", "Blazor", "React", "PowerShell", "JavaScript", "DevOps Pipelines"];
+
 export function Hero() {
   const handleScroll = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -28,6 +32,10 @@ export function Hero() {
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#8C8985", marginTop: "16px", marginBottom: 0 }}>
           Senior Developer & Solutions Architect — Stockholm
         </p>
+
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "24px" }}>
+          {keySkills.map((s) => <TechTag key={s} label={s} />)}
+        </div>
 
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#8C8985", maxWidth: "560px", marginTop: "40px", marginBottom: 0 }}>
           I've been writing software professionally since 2012. I care about systems that hold up, solutions that are honest about their complexity, and staying genuinely curious about what new tooling makes possible.
