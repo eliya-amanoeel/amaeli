@@ -35,7 +35,7 @@ export function Experience() {
           {entries.map((entry, i) => (
             <div key={i} style={{ position: "relative" }}>
               <div style={{ position: "absolute", left: "-29px", top: "6px", width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "#2A2C30" }} />
-              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#6EBF9E", display: "block", marginBottom: "4px" }}>
+              <span className="experience-date" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#6EBF9E", display: "block", marginBottom: "4px" }}>
                 {entry.dates}
               </span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
