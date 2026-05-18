@@ -36,7 +36,7 @@ const projects: Project[] = [
     name: "Hardware & Mobile — Stealth",
     status: "IN PROGRESS",
     statusColor: "#5B9BD5",
-    description: "A product-stage venture in the field of outdoor sports and working dogs — co-developed with a partner. Involves custom hardware with firmware written in C++, paired with a companion mobile application. AI models are central to how this is being built, enabling two people to work effectively across embedded systems and mobile development.",
+    description: "A product-stage venture in the field of outdoor sports and hunting dogs — co-developed with a partner. Involves custom hardware with firmware written in C++, paired with a companion mobile application. AI models are central to how this is being built, enabling two people to work effectively across embedded systems and mobile development.",
     tags: ["C++", "Mobile", "OpenAI", "Claude"],
   },
 ];
