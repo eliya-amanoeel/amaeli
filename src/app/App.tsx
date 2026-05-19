@@ -5,6 +5,7 @@ import { SelectedWork } from "./components/SelectedWork";
 import { HowIWork } from "./components/HowIWork";
 import { Experience } from "./components/Experience";
 import { Education } from "./components/Education";
+import { SpokenLanguages } from "./components/SpokenLanguages";
 import { PersonalProjects } from "./components/PersonalProjects";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
@@ -25,7 +26,7 @@ export default function App() {
   useEffect(() => {
     document.title = "Eliya Amanoeel — Senior Developer & Solutions Architect";
     document.documentElement.lang = "en";
-    setMetaTag("description", "Senior .NET and SharePoint developer based in Stockholm with 13+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.");
+    setMetaTag("description", "Senior .NET and SharePoint developer based in Stockholm with 14+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.");
     setMetaTag("og:title", "Eliya Amanoeel — Senior Developer & Solutions Architect", true);
     setMetaTag("og:description", "Senior .NET and SharePoint developer based in Stockholm with 13+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.", true);
     setMetaTag("og:url", "https://amaeli.se", true);
@@ -47,6 +48,7 @@ export default function App() {
         <HowIWork />
         <Experience />
         <Education />
+        <SpokenLanguages />
         <PersonalProjects />
         <Skills />
         <Contact />

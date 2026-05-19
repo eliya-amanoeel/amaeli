@@ -4,7 +4,6 @@ interface Entry {
   dates: string;
   client: string;
   role: string;
-  linkedWork?: string;
 }
 
 const entries: Entry[] = [
@@ -18,11 +17,6 @@ const entries: Entry[] = [
 ];
 
 export function Experience() {
-  const handleScrollTo = (e: React.MouseEvent, target: string) => {
-    e.preventDefault();
-    document.querySelector(target)?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
@@ -38,18 +32,6 @@ export function Experience() {
                 <span style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", fontWeight: 500, color: "#F0EDE8" }}>
                   {entry.client}
                 </span>
-                {entry.linkedWork && (
-                  <a
-                    href={entry.linkedWork}
-                    onClick={(e) => handleScrollTo(e, entry.linkedWork!)}
-                    style={{ color: "#8C8985", textDecoration: "none", fontSize: "11px", transition: "color 150ms ease" }}
-                    onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#5B9BD5")}
-                    onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#8C8985")}
-                    title="View project"
-                  >
-                    ↗
-                  </a>
-                )}
               </div>
               <span style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#8C8985" }}>
                 {entry.role}

@@ -20,7 +20,7 @@ const projects: Project[] = [
     status: "SHIPPED",
     statusColor: "#6EBF9E",
     description: "A complete web application for a local choir to create, store, and edit hymns, and assemble printed programmes for services. Built solo in Blazor with a custom data model for hymn structure and programme composition. Actively used.",
-    tags: ["Blazor", "C#", ".NET", "GitHub Copilot"],
+    tags: ["Blazor", "C#", ".NET", "Figma", "GitHub Copilot"],
   },
   {
     id: "voltio",
@@ -29,7 +29,7 @@ const projects: Project[] = [
     status: "SHIPPED",
     statusColor: "#6EBF9E",
     description: "Marketing website for a startup founded by two electricians. Designed and built end-to-end — from layout and copy structure to deployment.",
-    tags: ["React", "GitHub Copilot", "OpenAI"],
+    tags: ["HTML", "CSS", "Figma", "GitHub Copilot"],
   },
   {
     id: "firmware",
@@ -37,7 +37,7 @@ const projects: Project[] = [
     status: "IN PROGRESS",
     statusColor: "#5B9BD5",
     description: "A product-stage venture in the field of outdoor sports and hunting dogs — co-developed with a partner. Involves custom hardware with firmware written in C++, paired with a companion mobile application. AI models are central to how this is being built, enabling two people to work effectively across embedded systems and mobile development.",
-    tags: ["C++", "Mobile", "OpenAI", "Claude"],
+    tags: ["C++", "Mobile", "Figma", "OpenAI API", "Claude / Anthropic"],
   },
 ];
 
@@ -47,7 +47,7 @@ export function PersonalProjects() {
   return (
     <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="05" label="PERSONAL PROJECTS" />
+        <SectionLabel number="06" label="PERSONAL PROJECTS" />
         <div>
           {projects.map((project, i) => (
             <div key={project.id}>

@@ -51,7 +51,7 @@ export function Contact() {
   return (
     <section id="contact" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "80px" }} className="section-pad">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="07" label="CONTACT" />
+        <SectionLabel number="08" label="CONTACT" />
 
         <div style={{ display: "flex", alignItems: "center", gap: "24px", marginBottom: "32px" }}>
           <ImageWithFallback

@@ -12,7 +12,7 @@ const groups = [
   },
   {
     label: "Languages",
-    skills: ["C#", ".NET", "ASP.NET", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS"],
+    skills: ["C#", ".NET", "ASP.NET", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS", "React", "XML", "C++"],
   },
   {
     label: "Tools & DevOps",
@@ -28,7 +28,7 @@ export function Skills() {
   return (
     <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="06" label="SKILLS" />
+        <SectionLabel number="07" label="SKILLS" />
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
           {groups.map((group, i) => (
             <div key={i}>
