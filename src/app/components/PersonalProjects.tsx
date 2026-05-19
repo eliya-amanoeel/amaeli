@@ -29,7 +29,7 @@ const projects: Project[] = [
     status: "SHIPPED",
     statusColor: "#6EBF9E",
     description: "Marketing website for a startup founded by two electricians. Designed and built end-to-end — from layout and copy structure to deployment.",
-    tags: ["HTML", "CSS", "Figma", "GitHub Copilot"],
+    tags: ["React", "Figma", "GitHub Copilot"],
   },
   {
     id: "firmware",
