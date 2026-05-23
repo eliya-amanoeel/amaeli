@@ -20,10 +20,10 @@
   <text x="80" y="340" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="88" font-weight="300" fill="#F0EDE8" letter-spacing="6">ELIYA AMANOEEL</text>
 
   <!-- Role -->
-  <text x="80" y="400" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#8C8985" letter-spacing="1">Senior Developer &amp; Solutions Architect — Stockholm</text>
+  <text x="80" y="400" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="#C8C4BF" letter-spacing="1">Senior Developer &amp; Solutions Architect — Stockholm</text>
 
   <!-- Bottom mono line -->
-  <text x="80" y="536" font-family="'Courier New', Courier, monospace" font-size="16" fill="#52504D" letter-spacing="2">13+ years · .NET · SharePoint · AI-augmented development</text>
+  <text x="80" y="536" font-family="'Courier New', Courier, monospace" font-size="16" fill="#8C8985" letter-spacing="2">13+ years · .NET · SharePoint · AI-augmented development</text>
 
   <!-- Bottom right accent dot -->
   <circle cx="1120" cy="530" r="4" fill="#6EBF9E"/>
