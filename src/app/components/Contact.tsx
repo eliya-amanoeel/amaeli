@@ -49,7 +49,7 @@ function DownloadRow() {
 
 export function Contact() {
   return (
-    <section id="contact" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "80px" }} className="section-pad">
+    <section id="contact" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "80px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <SectionLabel number="08" label="CONTACT" />
 

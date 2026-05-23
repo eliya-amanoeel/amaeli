@@ -37,6 +37,7 @@ export function Nav() {
       >
         <a
           href="#"
+          className="nav-logo"
           style={{
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: "13px",
@@ -48,7 +49,7 @@ export function Nav() {
           }}
         >
           <span style={{ color: "#52504D" }}>{">"}_</span>
-          <span style={{ color: "#6EBF9E" }}>EA</span>
+          <span className="nav-logo-ea" style={{ color: "#6EBF9E" }}>EA</span>
         </a>
 
         <a
@@ -65,6 +66,22 @@ export function Nav() {
       <style>{`
         @media (max-width: 640px) {
           .nav-inner { padding: 0 20px !important; }
+        }
+        .nav-logo { animation: navGlitch 8s infinite; }
+        .nav-logo-ea { animation: navGlitchColor 8s infinite; }
+        @keyframes navGlitch {
+          0%, 95%   { transform: none; opacity: 1; }
+          95.5%     { transform: translateX(-2px) skewX(-3deg); opacity: 0.8; }
+          96%       { transform: translateX(2px) skewX(2deg); opacity: 0.9; }
+          96.5%     { transform: translateX(-1px) skewX(-1deg); opacity: 0.75; }
+          97%, 100% { transform: none; opacity: 1; }
+        }
+        @keyframes navGlitchColor {
+          0%, 95%   { color: #6EBF9E; }
+          95.5%     { color: #5B9BD5; }
+          96%       { color: #F0EDE8; }
+          96.5%     { color: #6EBF9E; }
+          97%, 100% { color: #6EBF9E; }
         }
       `}</style>
     </nav>

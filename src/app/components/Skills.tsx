@@ -26,7 +26,7 @@ const groups = [
 
 export function Skills() {
   return (
-    <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad">
+    <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <SectionLabel number="07" label="SKILLS" />
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>

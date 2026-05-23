@@ -1,8 +1,26 @@
+import { useState, useEffect } from "react";
 import { TechTag } from "./TechTag";
 
+const FULL_NAME = "ELIYA AMANOEEL";
 const keySkills = ["C#", ".NET", "SharePoint", "Azure", "Angular", "Blazor", "React", "PowerShell", "JavaScript", "DevOps Pipelines"];
 
 export function Hero() {
+  const [displayed, setDisplayed] = useState("");
+  const [typingDone, setTypingDone] = useState(false);
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      i++;
+      setDisplayed(FULL_NAME.slice(0, i));
+      if (i === FULL_NAME.length) {
+        clearInterval(interval);
+        setTypingDone(true);
+      }
+    }, 80);
+    return () => clearInterval(interval);
+  }, []);
+
   const handleScroll = (e: React.MouseEvent) => {
     e.preventDefault();
     document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
@@ -26,7 +44,7 @@ export function Hero() {
             margin: 0,
           }}
         >
-          ELIYA AMANOEEL
+          {displayed}<span className={typingDone ? "hero-cursor-blink" : "hero-cursor-visible"}>_</span>
         </h1>
 
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#8C8985", marginTop: "16px", marginBottom: 0 }}>
@@ -38,11 +56,11 @@ export function Hero() {
         </div>
 
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#8C8985", maxWidth: "560px", marginTop: "40px", marginBottom: 0 }}>
-          I've been writing software professionally since 2012. I care about systems that hold up, solutions that are honest about their complexity, and staying genuinely curious about what new tooling makes possible.
+          I've been writing software professionally since 2013. I care about systems that hold up, solutions that are honest about their complexity, and staying genuinely curious about what new tooling makes possible.
         </p>
 
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#8C8985", maxWidth: "560px", marginTop: "20px", marginBottom: 0 }}>
-          14+ years building internal platforms, migration solutions, and governance tools on the Microsoft stack. I work across the full delivery chain — from architecture to release — and use AI models as a core part of how I design and build software today.
+          13+ years building internal platforms, migration solutions, and governance tools on the Microsoft stack. I work across the full delivery chain — from architecture to release — and use AI models as a core part of how I design and build software today.
         </p>
 
         <a
@@ -60,6 +78,9 @@ export function Hero() {
         @media (max-width: 640px) {
           .hero-section { padding-left: 20px !important; padding-right: 20px !important; padding-top: 120px !important; }
         }
+        .hero-cursor-visible { color: #6EBF9E; }
+        .hero-cursor-blink { color: #6EBF9E; animation: heroBlink 1s step-end infinite; }
+        @keyframes heroBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
       `}</style>
     </section>
   );

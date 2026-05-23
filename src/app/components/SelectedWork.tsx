@@ -50,7 +50,7 @@ export function SelectedWork() {
   const [hovered, setHovered] = useState<string | null>(null);
 
   return (
-    <section id="work" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad">
+    <section id="work" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <SectionLabel number="01" label="SELECTED WORK" />
         <div>
