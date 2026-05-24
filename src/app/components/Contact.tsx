@@ -1,6 +1,5 @@
 import { type MouseEvent } from "react";
 import { SectionLabel } from "./SectionLabel";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import photo from "../../imports/eliya-photo.jpg";
 
 function ContactRow({ label, href, display, external }: { label: string; href: string; display: string; external?: boolean }) {
@@ -54,7 +53,7 @@ export function Contact() {
         <SectionLabel number="08" label="CONTACT" />
 
         <div style={{ display: "flex", alignItems: "center", gap: "24px", marginBottom: "32px" }}>
-          <ImageWithFallback
+          <img
             src={photo}
             alt="Eliya Amanoeel"
             style={{ width: "72px", height: "72px", objectFit: "cover", objectPosition: "50% 15%", borderRadius: "4px", filter: "grayscale(20%)", flexShrink: 0 }}
