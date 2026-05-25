@@ -62,9 +62,9 @@ export function SelectedWork() {
                 onMouseLeave={() => setHovered(null)}
                 style={{ padding: "32px 16px", backgroundColor: hovered === card.id ? "#1C1E21" : "transparent", transition: "background-color 150ms ease", cursor: "default" }}
               >
-                <h3 style={{ fontFamily: "Inter, sans-serif", fontSize: "22px", fontWeight: 500, lineHeight: 1.3, color: "#F0EDE8", margin: "0 0 8px 0" }}>
+                <h2 style={{ fontFamily: "Inter, sans-serif", fontSize: "22px", fontWeight: 500, lineHeight: 1.3, color: "#F0EDE8", margin: "0 0 8px 0" }}>
                   {card.client}
-                </h3>
+                </h2>
                 <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 400, lineHeight: 1.5, color: "#8C8985", margin: "0 0 16px 0" }}>
                   {card.period} · {card.role}
                 </p>
