@@ -1,6 +1,6 @@
 import { type MouseEvent } from "react";
 import { SectionLabel } from "./SectionLabel";
-import photo from "../../imports/eliya-photo.jpg";
+import photo from "../../imports/eliya-photo.webp";
 
 function ContactRow({ label, href, display, external }: { label: string; href: string; display: string; external?: boolean }) {
   return (
@@ -56,6 +56,9 @@ export function Contact() {
           <img
             src={photo}
             alt="Eliya Amanoeel"
+            loading="lazy"
+            width={72}
+            height={72}
             style={{ width: "72px", height: "72px", objectFit: "cover", objectPosition: "50% 15%", borderRadius: "4px", filter: "grayscale(20%)", flexShrink: 0 }}
           />
           <div>
