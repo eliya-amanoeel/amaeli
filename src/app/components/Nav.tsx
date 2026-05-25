@@ -48,7 +48,7 @@ export function Nav() {
             gap: "6px",
           }}
         >
-          <span style={{ color: "#52504D" }}>{">"}_</span>
+          <span style={{ color: "#52504D" }} aria-hidden="true">{">"}_</span>
           <span className="nav-logo-ea" style={{ color: "#6EBF9E" }}>EA</span>
         </a>
 
