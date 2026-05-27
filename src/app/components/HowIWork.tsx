@@ -2,7 +2,7 @@ import { SectionLabel } from "./SectionLabel";
 
 export function HowIWork() {
   return (
-    <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
+    <section id="how-i-work" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <SectionLabel number="02" label="HOW I WORK" />
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#8C8985", margin: "0 0 24px 0" }}>

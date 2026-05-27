@@ -7,7 +7,7 @@ const certifications = [
 
 export function Education() {
   return (
-    <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
+    <section id="education" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <SectionLabel number="04" label="EDUCATION" />
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>

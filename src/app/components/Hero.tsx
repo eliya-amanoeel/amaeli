@@ -21,11 +21,6 @@ export function Hero() {
     return () => clearInterval(interval);
   }, []);
 
-  const handleScroll = (e: React.MouseEvent) => {
-    e.preventDefault();
-    document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section
       id="hero"
@@ -63,15 +58,6 @@ export function Hero() {
           13+ years building internal platforms, migration solutions, and governance tools on the Microsoft stack. I work across the full delivery chain — from architecture to release — and use AI models as a core part of how I design and build software today.
         </p>
 
-        <a
-          href="#work"
-          onClick={handleScroll}
-          style={{ display: "inline-block", marginTop: "32px", fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 400, color: "#5B9BD5", textDecoration: "none", letterSpacing: "0.02em" }}
-          onMouseEnter={(e) => ((e.target as HTMLElement).style.textDecoration = "underline")}
-          onMouseLeave={(e) => ((e.target as HTMLElement).style.textDecoration = "none")}
-        >
-          View work ↓
-        </a>
       </div>
 
       <style>{`

@@ -18,7 +18,7 @@ const entries: Entry[] = [
 
 export function Experience() {
   return (
-    <section style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
+    <section id="experience" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <SectionLabel number="03" label="EXPERIENCE" />
         <div style={{ borderLeft: "1px solid #2A2C30", paddingLeft: "24px", display: "flex", flexDirection: "column", gap: "32px" }}>

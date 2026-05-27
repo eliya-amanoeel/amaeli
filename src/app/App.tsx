@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Nav } from "./components/Nav";
+import { SideNav } from "./components/SideNav";
 import { Hero } from "./components/Hero";
 import { SelectedWork } from "./components/SelectedWork";
 import { HowIWork } from "./components/HowIWork";
@@ -67,6 +68,7 @@ export default function App() {
   return (
     <div style={{ backgroundColor: "#0E0F11", minHeight: "100vh", fontFamily: "Inter, sans-serif", color: "#F0EDE8" }}>
       <Nav />
+      <SideNav />
       <main>
         <Hero />
         <SelectedWork />
