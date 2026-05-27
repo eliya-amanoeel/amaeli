@@ -31,7 +31,7 @@ function DownloadRow() {
   return (
     <div className="no-print" style={{ display: "grid", gridTemplateColumns: "96px 1fr", gap: "16px", alignItems: "baseline", padding: "10px 0", borderBottom: "1px solid #1F2124" }}>
       <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", fontWeight: 500, color: "#6EBF9E", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-        CV
+        RESUMÉ
       </span>
       <a
         href="#"
@@ -40,7 +40,7 @@ function DownloadRow() {
         onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
         onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#8C8985")}
       >
-        Download as PDF ↓
+        download ↓
       </a>
     </div>
   );

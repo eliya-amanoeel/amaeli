@@ -33,6 +33,11 @@
     padding-bottom: 24pt !important;
   }
 
+  .hero-cursor-visible,
+  .hero-cursor-blink {
+    display: none !important;
+  }
+
   #hero h1 {
     font-size: 28pt !important;
     color: #111111 !important;
@@ -95,7 +100,6 @@
   }
 
   /* ── Avoid breaking cards and entries across pages ── */
-  #work > div > div,
   section > div > div > div {
     break-inside: avoid;
   }
