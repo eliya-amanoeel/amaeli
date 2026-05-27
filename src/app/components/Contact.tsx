@@ -40,7 +40,7 @@ function DownloadRow() {
         onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
         onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#8C8985")}
       >
-        download ↓
+        download a copy ↓
       </a>
     </div>
   );
@@ -75,7 +75,6 @@ export function Contact() {
           <ContactRow label="Email" href="mailto:contact@amaeli.se" display="contact@amaeli.se" />
           <ContactRow label="Phone" href="tel:+46702068908" display="+46 70-206 89 08" />
           <ContactRow label="LinkedIn" href="https://www.linkedin.com/in/eliya-amanoeel/" display="linkedin.com/in/eliya-amanoeel" external />
-          <ContactRow label="GitHub" href="https://github.com/eliya-amanoeel" display="github.com/eliya-amanoeel" external />
           <DownloadRow />
         </div>
 
