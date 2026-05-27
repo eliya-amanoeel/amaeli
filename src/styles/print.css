@@ -114,6 +114,11 @@
     background-color: transparent !important;
   }
 
+  /* ── Remove scroll-depth padding ── */
+  main {
+    padding-bottom: 0 !important;
+  }
+
   /* ── Section spacing reduced for print ── */
   section {
     padding-left: 0 !important;

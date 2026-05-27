@@ -69,7 +69,7 @@ export default function App() {
     <div style={{ backgroundColor: "#0E0F11", minHeight: "100vh", fontFamily: "Inter, sans-serif", color: "#F0EDE8" }}>
       <Nav />
       <SideNav />
-      <main>
+      <main style={{ paddingBottom: "calc(100vh - 480px)" }}>
         <Hero />
         <SelectedWork />
         <HowIWork />
