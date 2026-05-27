@@ -26,7 +26,7 @@ const work: WorkCard[] = [
     period: "2019 – present",
     role: "SharePoint Developer",
     description: "Developed and shipped new functionality across a large SharePoint platform, and led the technical migration from SharePoint 2016 to SharePoint Subscription Edition — including designing the migration approach, writing the tooling, and executing the transition without disrupting live services.",
-    tags: ["SharePoint SE", "SharePoint 2016", "C#", "PowerShell", "Azure DevOps", "TDD", "SpecFlow"],
+    tags: ["C#", "PowerShell", "Azure DevOps", "TDD", "SpecFlow", "SharePoint SE", "SharePoint 2016"],
   },
   {
     id: "trafikverket",
@@ -34,7 +34,7 @@ const work: WorkCard[] = [
     period: "2016 – 2019",
     role: "SharePoint Developer & Migration Architect",
     description: "Designed and built a custom migration platform from scratch to move Trafikverket's SharePoint environments from 2010 to 2016. Architected and coded the full pipeline — export scripts, XML transformation layers, and import tooling — that handled all content, structure, and metadata across multiple complex environments.",
-    tags: ["SharePoint 2010", "SharePoint 2016", "C#", "CSOM", "PowerShell", "XML", "TFS"],
+    tags: ["C#", "CSOM", "PowerShell", "XML", "TFS", "SharePoint 2010", "SharePoint 2016"],
   },
   {
     id: "receptkontroll",
@@ -42,7 +42,7 @@ const work: WorkCard[] = [
     period: "2013 – 2019",
     role: ".NET & SharePoint Developer",
     description: "Lead developer on ReceptKontroll — a platform built for the Swedish Health and Social Care Inspectorate (IVO) to monitor narcotic prescriptions and detect potential over-prescribing. Developed new features in C# on SharePoint Server 2007, built and maintained the BizTalk integration layer connecting to the Swedish eHealth Agency, and owned the full release cycle over six years.",
-    tags: ["SharePoint 2007", "C#", ".NET", "BizTalk", "PowerShell", "JavaScript", "TFS"],
+    tags: ["C#", ".NET", "BizTalk", "PowerShell", "JavaScript", "TFS", "SharePoint 2007"],
   },
 ];
 

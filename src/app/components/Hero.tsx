@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { TechTag } from "./TechTag";
 
 const FULL_NAME = "ELIYA AMANOEEL";
-const keySkills = ["C#", ".NET", "SharePoint", "Azure", "Angular", "Blazor", "React", "PowerShell", "JavaScript", "DevOps Pipelines"];
+const keySkills = ["C#", ".NET", "Azure", "Angular", "Blazor", "React", "PowerShell", "JavaScript", "DevOps Pipelines", "SharePoint"];
 
 export function Hero() {
   const [displayed, setDisplayed] = useState("");

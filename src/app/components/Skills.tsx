@@ -8,7 +8,7 @@ const groups = [
   },
   {
     label: "Platforms",
-    skills: ["SharePoint SE", "SharePoint Online", "SharePoint 2016", "SharePoint 2013", "SharePoint 2010", "SharePoint 2007", "Office 365", "Azure", "Blazor", "Angular"],
+    skills: ["Office 365", "Azure", "Blazor", "Angular", "SharePoint SE", "SharePoint Online", "SharePoint 2016", "SharePoint 2013", "SharePoint 2010", "SharePoint 2007"],
   },
   {
     label: "Languages",
