@@ -28,7 +28,7 @@ const projects: Project[] = [
     url: "https://voltioel.se",
     status: "SHIPPED",
     statusColor: "#6EBF9E",
-    description: "Marketing website for a startup founded by two electricians. Designed and built end-to-end — from layout and copy structure to deployment.",
+    description: "Marketing website for a startup founded by two electricians. Designed and built end-to-end — from layout and content to deployment.",
     tags: ["React", "Figma", "GitHub Copilot"],
   },
   {

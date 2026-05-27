@@ -13,6 +13,6 @@ export const SECTIONS = [
 export function scrollToSection(id: string) {
   const el = document.getElementById(id);
   if (!el) return;
-  const top = el.getBoundingClientRect().top + window.scrollY - 72;
+  const top = el.offsetTop - 72;
   window.scrollTo({ top, behavior: "smooth" });
 }
