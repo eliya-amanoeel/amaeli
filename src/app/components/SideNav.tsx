@@ -1,15 +1,5 @@
 import { useState, useEffect } from "react";
-
-const SECTIONS = [
-  { id: "work",        label: "work",             num: "01" },
-  { id: "how-i-work",  label: "how i work",       num: "02" },
-  { id: "experience",  label: "experience",        num: "03" },
-  { id: "education",   label: "education",         num: "04" },
-  { id: "languages",   label: "languages",         num: "05" },
-  { id: "projects",    label: "projects",          num: "06" },
-  { id: "skills",      label: "skills",            num: "07" },
-  { id: "contact",     label: "contact",           num: "08" },
-];
+import { SECTIONS, scrollToSection } from "../navigation";
 
 export function SideNav() {
   const [active, setActive] = useState<string>("work");
@@ -80,10 +70,7 @@ export function SideNav() {
             href={`#${id}`}
             onClick={(e) => {
               e.preventDefault();
-              const el = document.getElementById(id);
-              if (!el) return;
-              const top = el.getBoundingClientRect().top + window.scrollY - 72;
-              window.scrollTo({ top, behavior: "smooth" });
+              scrollToSection(id);
             }}
             style={{
               display: "flex",
