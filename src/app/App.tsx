@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useTheme } from "../hooks/useTheme";
 import { Nav } from "./components/Nav";
 import { SideNav } from "./components/SideNav";
 import { Hero } from "./components/Hero";
@@ -24,6 +25,8 @@ function setMetaTag(name: string, content: string, property = false) {
 }
 
 export default function App() {
+  const { isDark, toggleTheme } = useTheme();
+
   useEffect(() => {
     console.log(
       "%cHello, curious one.\n%c>_ You're nosing around in the right places.\n%c   — Eliya",
@@ -66,8 +69,8 @@ export default function App() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: "#0E0F11", minHeight: "100vh", fontFamily: "Inter, sans-serif", color: "#F0EDE8" }}>
-      <Nav />
+    <div style={{ backgroundColor: "var(--app-bg)", minHeight: "100vh", fontFamily: "Inter, sans-serif", color: "var(--app-fg)", transition: "background-color 200ms ease, color 200ms ease" }}>
+      <Nav isDark={isDark} toggleTheme={toggleTheme} />
       <SideNav />
       <main style={{ paddingBottom: "calc(100vh - 480px)" }}>
         <Hero />

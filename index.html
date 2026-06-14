@@ -24,6 +24,15 @@
       <meta name="twitter:image" content="https://amaeli.se/og-image.png" />
 
       <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      <script>
+        (function() {
+          var stored = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          }
+        })();
+      </script>
     </head>
 
     <body>

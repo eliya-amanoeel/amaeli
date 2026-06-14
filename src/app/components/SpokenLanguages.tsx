@@ -13,21 +13,16 @@ export function SpokenLanguages() {
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           {languages.map((lang) => (
             <div key={lang.name} style={{ display: "flex", alignItems: "baseline", gap: "16px" }}>
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", fontWeight: 500, color: "#F0EDE8", margin: 0, minWidth: "96px" }}>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "15px", fontWeight: 500, color: "var(--app-fg)", margin: 0, minWidth: "96px" }}>
                 {lang.name}
               </p>
-              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", color: "#9E9B97", margin: 0 }}>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", color: "var(--app-muted)", margin: 0 }}>
                 {lang.level}
               </p>
             </div>
           ))}
         </div>
       </div>
-      <style>{`
-        @media (max-width: 640px) {
-          .section-pad { padding-left: 20px !important; padding-right: 20px !important; }
-        }
-      `}</style>
     </section>
   );
 }

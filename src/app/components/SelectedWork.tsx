@@ -60,15 +60,15 @@ export function SelectedWork() {
                 id={`work-${card.id}`}
                 onMouseEnter={() => setHovered(card.id)}
                 onMouseLeave={() => setHovered(null)}
-                style={{ padding: "32px 16px", backgroundColor: hovered === card.id ? "#1C1E21" : "transparent", transition: "background-color 150ms ease", cursor: "default" }}
+                style={{ padding: "32px 16px", backgroundColor: hovered === card.id ? "var(--app-card-hover)" : "transparent", transition: "background-color 150ms ease", cursor: "default" }}
               >
-                <h2 style={{ fontFamily: "Inter, sans-serif", fontSize: "22px", fontWeight: 500, lineHeight: 1.3, color: "#F0EDE8", margin: "0 0 8px 0" }}>
+                <h2 style={{ fontFamily: "Inter, sans-serif", fontSize: "22px", fontWeight: 500, lineHeight: 1.3, color: "var(--app-fg)", margin: "0 0 8px 0" }}>
                   {card.client}
                 </h2>
-                <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 400, lineHeight: 1.5, color: "#9E9B97", margin: "0 0 16px 0" }}>
+                <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 400, lineHeight: 1.5, color: "var(--app-muted)", margin: "0 0 16px 0" }}>
                   {card.period} · {card.role}
                 </p>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#9E9B97", maxWidth: "600px", margin: "0 0 20px 0" }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "600px", margin: "0 0 20px 0" }}>
                   {card.description}
                 </p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -77,16 +77,11 @@ export function SelectedWork() {
                   ))}
                 </div>
               </div>
-              {i < work.length - 1 && <div style={{ height: "1px", backgroundColor: "#1F2124" }} />}
+              {i < work.length - 1 && <div style={{ height: "1px", backgroundColor: "var(--app-border)" }} />}
             </div>
           ))}
         </div>
       </div>
-      <style>{`
-        @media (max-width: 640px) {
-          .section-pad { padding-left: 20px !important; padding-right: 20px !important; }
-        }
-      `}</style>
     </section>
   );
 }

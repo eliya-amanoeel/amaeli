@@ -24,8 +24,8 @@ export function Hero() {
   return (
     <section
       id="hero"
-      style={{ paddingTop: "120px", paddingBottom: "64px", paddingLeft: "48px", paddingRight: "48px" }}
       className="hero-section"
+      style={{ paddingTop: "120px", paddingBottom: "64px", paddingLeft: "48px", paddingRight: "48px" }}
     >
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <h1
@@ -35,14 +35,15 @@ export function Hero() {
             fontWeight: 300,
             lineHeight: 1.1,
             letterSpacing: "0.03em",
-            color: "#F0EDE8",
+            color: "var(--app-fg)",
             margin: 0,
           }}
         >
-          {displayed}<span className={typingDone ? "hero-cursor-blink" : "hero-cursor-visible"}>_</span>
+          {displayed}
+          <span className={typingDone ? "hero-cursor-blink" : "hero-cursor-visible"}>_</span>
         </h1>
 
-        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#9E9B97", marginTop: "16px", marginBottom: 0 }}>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", marginTop: "16px", marginBottom: 0 }}>
           Senior Developer & Solutions Architect — Stockholm
         </p>
 
@@ -50,31 +51,19 @@ export function Hero() {
           {keySkills.map((s) => <TechTag key={s} label={s} />)}
         </div>
 
-        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#9E9B97", maxWidth: "560px", marginTop: "40px", marginBottom: 0 }}>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "560px", marginTop: "40px", marginBottom: 0 }}>
           I've been writing software professionally since 2013. I care about systems that hold up, solutions that are honest about their complexity, and staying genuinely curious about what new tooling makes possible.
         </p>
 
-        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#9E9B97", maxWidth: "560px", marginTop: "20px", marginBottom: 0 }}>
+        <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "560px", marginTop: "20px", marginBottom: 0 }}>
           13+ years building internal platforms, migration solutions, and governance tools on the Microsoft stack. I work across the full delivery chain — from architecture to release — and use AI models as a core part of how I design and build software today.
         </p>
 
         <div className="scroll-hint" style={{ marginTop: "56px" }}>
-          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "#52504D", letterSpacing: "0.06em" }}>scroll</span>
-          <span className="scroll-arrow" style={{ display: "block", color: "#52504D", fontSize: "14px", marginTop: "4px" }}>↓</span>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "var(--app-subtle)", letterSpacing: "0.06em" }}>scroll</span>
+          <span className="scroll-arrow" style={{ display: "block", color: "var(--app-subtle)", fontSize: "14px", marginTop: "4px" }}>↓</span>
         </div>
-
       </div>
-
-      <style>{`
-        @media (max-width: 640px) {
-          .hero-section { padding-left: 20px !important; padding-right: 20px !important; padding-top: 120px !important; }
-        }
-        .hero-cursor-visible { color: #6EBF9E; }
-        .hero-cursor-blink { color: #6EBF9E; animation: heroBlink 1s step-end infinite; }
-        @keyframes heroBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-        .scroll-arrow { animation: scrollBob 2s ease-in-out infinite; }
-        @keyframes scrollBob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
-      `}</style>
     </section>
   );
 }

@@ -32,7 +32,7 @@ export function Skills() {
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
           {groups.map((group, i) => (
             <div key={i}>
-              <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#9E9B97", margin: "0 0 12px 0", letterSpacing: "0.05em" }}>
+              <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-muted)", margin: "0 0 12px 0", letterSpacing: "0.05em" }}>
                 {group.label}
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -44,11 +44,6 @@ export function Skills() {
           ))}
         </div>
       </div>
-      <style>{`
-        @media (max-width: 640px) {
-          .section-pad { padding-left: 20px !important; padding-right: 20px !important; }
-        }
-      `}</style>
     </section>
   );
 }

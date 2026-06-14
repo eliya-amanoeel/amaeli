@@ -12,23 +12,23 @@ export function Education() {
         <SectionLabel number="06" label="EDUCATION" />
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
           <div>
-            <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#6EBF9E", margin: "0 0 8px 0", letterSpacing: "0.05em" }}>
+            <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-accent)", margin: "0 0 8px 0", letterSpacing: "0.05em" }}>
               Aug 2011 – Jan 2013
             </p>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", fontWeight: 500, color: "#F0EDE8", margin: "0 0 2px 0", lineHeight: 1.4 }}>
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", fontWeight: 500, color: "var(--app-fg)", margin: "0 0 2px 0", lineHeight: 1.4 }}>
               SharePoint Development
             </p>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#9E9B97", margin: 0 }}>
+            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "var(--app-muted)", margin: 0 }}>
               Nackademin Yrkeshögskola
             </p>
           </div>
           <div>
-            <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#6EBF9E", margin: "0 0 12px 0", letterSpacing: "0.05em" }}>
+            <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-accent)", margin: "0 0 12px 0", letterSpacing: "0.05em" }}>
               CERTIFICATIONS
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
               {certifications.map((cert) => (
-                <p key={cert} style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#9E9B97", margin: 0, lineHeight: 1.5 }}>
+                <p key={cert} style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "var(--app-muted)", margin: 0, lineHeight: 1.5 }}>
                   {cert}
                 </p>
               ))}
@@ -36,11 +36,6 @@ export function Education() {
           </div>
         </div>
       </div>
-      <style>{`
-        @media (max-width: 640px) {
-          .section-pad { padding-left: 20px !important; padding-right: 20px !important; }
-        }
-      `}</style>
     </section>
   );
 }

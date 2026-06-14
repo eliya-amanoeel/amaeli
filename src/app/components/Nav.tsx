@@ -1,7 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { SECTIONS, scrollToSection } from "../navigation";
 
-export function Nav() {
+interface NavProps {
+  isDark: boolean;
+  toggleTheme: () => void;
+}
+
+export function Nav({ isDark, toggleTheme }: NavProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -41,13 +46,14 @@ export function Nav() {
           left: 0,
           right: 0,
           zIndex: 50,
-          backgroundColor: scrolled ? "rgba(14,15,17,0.85)" : "#0E0F11",
+          backgroundColor: scrolled ? "var(--app-nav-bg-scrolled)" : "var(--app-nav-bg)",
           backdropFilter: scrolled ? "blur(8px)" : "none",
-          borderBottom: scrolled ? "1px solid #1F2124" : "1px solid transparent",
-          transition: "border-color 150ms ease, backdrop-filter 150ms ease",
+          borderBottom: scrolled ? "1px solid var(--app-border)" : "1px solid transparent",
+          transition: "border-color 150ms ease, backdrop-filter 150ms ease, background-color 200ms ease",
         }}
       >
         <div
+          className="nav-inner"
           style={{
             maxWidth: "720px",
             margin: "0 auto",
@@ -57,7 +63,6 @@ export function Nav() {
             alignItems: "center",
             justifyContent: "space-between",
           }}
-          className="nav-inner"
         >
           <a
             href="#"
@@ -72,50 +77,46 @@ export function Nav() {
               gap: "6px",
             }}
           >
-            <span style={{ color: "#52504D" }} aria-hidden="true">{">"}_</span>
-            <span className="nav-logo-ea" style={{ color: "#6EBF9E" }}>EA</span>
+            <span style={{ color: "var(--app-subtle)" }} aria-hidden="true">{">"}_</span>
+            <span style={{ color: "var(--app-accent)" }}>EA</span>
           </a>
 
-          <button
-            className="nav-menu-btn"
-            aria-label="Open navigation menu"
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen(true)}
-            style={{
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: "12px",
-              color: "#9E9B97",
-              letterSpacing: "0.06em",
-              padding: "4px 0",
-              transition: "color 150ms ease",
-            }}
-            onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
-            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#9E9B97")}
-          >
-            [ menu ]
-          </button>
-        </div>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+            <label
+              className="uiverse-pixel-toggle"
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+            >
+              <input
+                type="checkbox"
+                className="uiverse-pixel-toggle-input"
+                checked={isDark}
+                onChange={toggleTheme}
+              />
+            </label>
 
-        <style>{`
-          @media (max-width: 640px) {
-            .nav-inner { padding: 0 20px !important; }
-          }
-          .nav-menu-btn { display: none; }
-          @media (max-width: 1079px) {
-            .nav-menu-btn { display: block; }
-          }
-          .nav-logo { animation: navGlitch 8s infinite; }
-          @keyframes navGlitch {
-            0%, 95%   { transform: none; opacity: 1; }
-            95.5%     { transform: translateX(-2px) skewX(-3deg); opacity: 0.8; }
-            96%       { transform: translateX(2px) skewX(2deg); opacity: 0.9; }
-            96.5%     { transform: translateX(-1px) skewX(-1deg); opacity: 0.75; }
-            97%, 100% { transform: none; opacity: 1; }
-          }
-        `}</style>
+            <button
+              className="nav-menu-btn"
+              aria-label="Open navigation menu"
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen(true)}
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: "12px",
+                color: "var(--app-muted)",
+                letterSpacing: "0.06em",
+                padding: "4px 0",
+                transition: "color 150ms ease",
+              }}
+              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
+              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-muted)")}
+            >
+              [ menu ]
+            </button>
+          </div>
+        </div>
       </nav>
 
       {/* Mobile full-screen overlay */}
@@ -127,7 +128,7 @@ export function Nav() {
           position: "fixed",
           inset: 0,
           zIndex: 100,
-          backgroundColor: "#0E0F11",
+          backgroundColor: "var(--app-nav-bg)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -137,7 +138,6 @@ export function Nav() {
           transition: "opacity 200ms ease",
         }}
       >
-        {/* Close button */}
         <button
           ref={closeRef}
           aria-label="Close navigation menu"
@@ -151,25 +151,24 @@ export function Nav() {
             cursor: "pointer",
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: "12px",
-            color: "#9E9B97",
+            color: "var(--app-muted)",
             letterSpacing: "0.06em",
             padding: "4px 0",
             transition: "color 150ms ease",
           }}
-          onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
-          onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#9E9B97")}
+          onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
+          onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-muted)")}
         >
           [ × ]
         </button>
 
-        {/* Index */}
         <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "4px" }}>
           <span
             aria-hidden="true"
             style={{
               fontFamily: "'JetBrains Mono', monospace",
               fontSize: "11px",
-              color: "#3A3C40",
+              color: "var(--app-index)",
               letterSpacing: "0.05em",
               marginBottom: "20px",
               display: "block",
@@ -191,18 +190,18 @@ export function Nav() {
                 fontSize: "22px",
                 letterSpacing: "0.02em",
                 textDecoration: "none",
-                color: "#9E9B97",
+                color: "var(--app-muted)",
                 transition: "color 150ms ease",
               }}
-              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
-              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#9E9B97")}
+              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
+              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-muted)")}
             >
               <span
                 aria-hidden="true"
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
                   fontSize: "12px",
-                  color: "#52504D",
+                  color: "var(--app-subtle)",
                   minWidth: "20px",
                 }}
               >
@@ -216,4 +215,3 @@ export function Nav() {
     </>
   );
 }
-

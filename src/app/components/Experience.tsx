@@ -54,26 +54,26 @@ const entries: Entry[] = [
 
 export function Experience() {
   return (
-    <section id="experience" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
+    <section id="experience" className="section-pad fade-section" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }}>
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
         <SectionLabel number="04" label="EXPERIENCE" />
-        <div style={{ borderLeft: "1px solid #2A2C30", paddingLeft: "24px", display: "flex", flexDirection: "column", gap: "32px" }}>
+        <div style={{ borderLeft: "1px solid var(--app-border-strong)", paddingLeft: "24px", display: "flex", flexDirection: "column", gap: "32px" }}>
           {entries.map((entry, i) => (
             <div key={i} style={{ position: "relative" }}>
-              <div style={{ position: "absolute", left: "-29px", top: "6px", width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "#2A2C30" }} />
-              <span className="experience-date" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#6EBF9E", display: "block", marginBottom: "4px" }}>
+              <div style={{ position: "absolute", left: "-29px", top: "6px", width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "var(--app-border-strong)" }} />
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-accent)", display: "block", marginBottom: "4px" }}>
                 {entry.dates}
               </span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                <span style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", fontWeight: 500, color: "#F0EDE8" }}>
+                <span style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", fontWeight: 500, color: "var(--app-fg)" }}>
                   {entry.client}
                 </span>
               </div>
-              <span style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#9E9B97" }}>
+              <span style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "var(--app-muted)" }}>
                 {entry.role}
               </span>
               {entry.description && (
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "#52504D", lineHeight: 1.6, margin: "6px 0 0 0" }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "var(--app-subtle)", lineHeight: 1.6, margin: "6px 0 0 0" }}>
                   {entry.description}
                 </p>
               )}
@@ -81,11 +81,6 @@ export function Experience() {
           ))}
         </div>
       </div>
-      <style>{`
-        @media (max-width: 640px) {
-          .section-pad { padding-left: 20px !important; padding-right: 20px !important; }
-        }
-      `}</style>
     </section>
   );
 }
