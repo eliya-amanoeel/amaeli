@@ -87,13 +87,13 @@ export function Nav() {
               cursor: "pointer",
               fontFamily: "'JetBrains Mono', monospace",
               fontSize: "12px",
-              color: "#8C8985",
+              color: "#9E9B97",
               letterSpacing: "0.06em",
               padding: "4px 0",
               transition: "color 150ms ease",
             }}
             onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
-            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#8C8985")}
+            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#9E9B97")}
           >
             [ menu ]
           </button>
@@ -151,13 +151,13 @@ export function Nav() {
             cursor: "pointer",
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: "12px",
-            color: "#8C8985",
+            color: "#9E9B97",
             letterSpacing: "0.06em",
             padding: "4px 0",
             transition: "color 150ms ease",
           }}
           onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
-          onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#8C8985")}
+          onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#9E9B97")}
         >
           [ × ]
         </button>
@@ -191,11 +191,11 @@ export function Nav() {
                 fontSize: "22px",
                 letterSpacing: "0.02em",
                 textDecoration: "none",
-                color: "#8C8985",
+                color: "#9E9B97",
                 transition: "color 150ms ease",
               }}
               onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
-              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#8C8985")}
+              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#9E9B97")}
             >
               <span
                 aria-hidden="true"

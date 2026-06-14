@@ -23,7 +23,7 @@ export function Footer() {
         style={{
           fontFamily: "'JetBrains Mono', monospace",
           fontSize: "11px",
-          color: "#8C8985",
+          color: "#9E9B97",
         }}
       >
         © {new Date().getFullYear()} Eliya Amanoeel

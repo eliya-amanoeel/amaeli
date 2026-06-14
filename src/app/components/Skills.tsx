@@ -28,11 +28,11 @@ export function Skills() {
   return (
     <section id="skills" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="07" label="SKILLS" />
+        <SectionLabel number="08" label="SKILLS" />
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
           {groups.map((group, i) => (
             <div key={i}>
-              <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#8C8985", margin: "0 0 12px 0", letterSpacing: "0.05em" }}>
+              <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#9E9B97", margin: "0 0 12px 0", letterSpacing: "0.05em" }}>
                 {group.label}
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>

@@ -81,14 +81,14 @@ export function SideNav() {
               fontSize: "11px",
               letterSpacing: "0.04em",
               textDecoration: "none",
-              color: active === id ? "#F0EDE8" : "#8C8985",
+              color: active === id ? "#F0EDE8" : "#9E9B97",
               transition: "color 150ms ease",
             }}
             onMouseEnter={(e) => {
               if (active !== id) (e.currentTarget as HTMLElement).style.color = "#F0EDE8";
             }}
             onMouseLeave={(e) => {
-              if (active !== id) (e.currentTarget as HTMLElement).style.color = "#8C8985";
+              if (active !== id) (e.currentTarget as HTMLElement).style.color = "#9E9B97";
             }}
           >
             <span

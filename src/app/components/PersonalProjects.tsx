@@ -17,7 +17,7 @@ const projects: Project[] = [
     id: "marnarsay",
     name: "kor.marnarsay.se",
     url: "https://kor.marnarsay.se",
-    status: "SHIPPED",
+    status: "LIVE",
     statusColor: "#6EBF9E",
     description: "A complete web application for a local choir to create, store, and edit hymns, and assemble printed programmes for services. Built solo in Blazor with a custom data model for hymn structure and programme composition. Actively used.",
     tags: ["Blazor", "C#", ".NET", "Figma", "GitHub Copilot"],
@@ -26,7 +26,7 @@ const projects: Project[] = [
     id: "voltio",
     name: "voltioel.se",
     url: "https://voltioel.se",
-    status: "SHIPPED",
+    status: "LIVE",
     statusColor: "#6EBF9E",
     description: "Marketing website for a startup founded by two electricians. Designed and built end-to-end — from layout and content to deployment.",
     tags: ["React", "Figma", "GitHub Copilot"],
@@ -47,7 +47,7 @@ export function PersonalProjects() {
   return (
     <section id="projects" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="06" label="PERSONAL PROJECTS" />
+        <SectionLabel number="05" label="PERSONAL PROJECTS" />
         <div>
           {projects.map((project, i) => (
             <div key={project.id}>
@@ -77,7 +77,7 @@ export function PersonalProjects() {
                     {project.status}
                   </span>
                 </div>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#8C8985", maxWidth: "600px", margin: "0 0 20px 0" }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#9E9B97", maxWidth: "600px", margin: "0 0 20px 0" }}>
                   {project.description}
                 </p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>

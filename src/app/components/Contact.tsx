@@ -12,9 +12,9 @@ function ContactRow({ label, href, display, external }: { label: string; href: s
         href={href}
         target={external ? "_blank" : undefined}
         rel={external ? "noopener noreferrer" : undefined}
-        style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, color: "#8C8985", textDecoration: "none", transition: "color 150ms ease" }}
+        style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, color: "#9E9B97", textDecoration: "none", transition: "color 150ms ease" }}
         onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
-        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#8C8985")}
+        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#9E9B97")}
       >
         {display}
       </a>
@@ -36,9 +36,9 @@ function DownloadRow() {
       <a
         href="#"
         onClick={handlePrint}
-        style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, color: "#8C8985", textDecoration: "none", transition: "color 150ms ease", cursor: "pointer" }}
+        style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, color: "#9E9B97", textDecoration: "none", transition: "color 150ms ease", cursor: "pointer" }}
         onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#F0EDE8")}
-        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#8C8985")}
+        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#9E9B97")}
       >
         download a copy ↓
       </a>
@@ -50,7 +50,7 @@ export function Contact() {
   return (
     <section id="contact" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "80px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="08" label="CONTACT" />
+        <SectionLabel number="09" label="CONTACT" />
 
         <div style={{ display: "flex", alignItems: "center", gap: "24px", marginBottom: "32px" }}>
           <img
@@ -65,7 +65,7 @@ export function Contact() {
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 500, color: "#F0EDE8", margin: 0, lineHeight: 1.4 }}>
               Eliya Amanoeel
             </p>
-            <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#8C8985", margin: "4px 0 0 0", lineHeight: 1.4 }}>
+            <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "#9E9B97", margin: "4px 0 0 0", lineHeight: 1.4 }}>
               Senior Developer & Solutions Architect
             </p>
           </div>

@@ -74,9 +74,9 @@ export default function App() {
         <SelectedWork />
         <HowIWork />
         <Experience />
+        <PersonalProjects />
         <Education />
         <SpokenLanguages />
-        <PersonalProjects />
         <Skills />
         <Contact />
       </main>

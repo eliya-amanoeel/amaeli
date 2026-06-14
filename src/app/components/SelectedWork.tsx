@@ -52,7 +52,7 @@ export function SelectedWork() {
   return (
     <section id="work" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="01" label="SELECTED WORK" />
+        <SectionLabel number="02" label="SELECTED WORK" />
         <div>
           {work.map((card, i) => (
             <div key={card.id}>
@@ -65,10 +65,10 @@ export function SelectedWork() {
                 <h2 style={{ fontFamily: "Inter, sans-serif", fontSize: "22px", fontWeight: 500, lineHeight: 1.3, color: "#F0EDE8", margin: "0 0 8px 0" }}>
                   {card.client}
                 </h2>
-                <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 400, lineHeight: 1.5, color: "#8C8985", margin: "0 0 16px 0" }}>
+                <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 400, lineHeight: 1.5, color: "#9E9B97", margin: "0 0 16px 0" }}>
                   {card.period} · {card.role}
                 </p>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#8C8985", maxWidth: "600px", margin: "0 0 20px 0" }}>
+                <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "#9E9B97", maxWidth: "600px", margin: "0 0 20px 0" }}>
                   {card.description}
                 </p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
