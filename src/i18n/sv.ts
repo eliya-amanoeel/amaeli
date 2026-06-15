@@ -22,7 +22,7 @@ export const sv: Translations = {
     },
   },
   hero: {
-    subtitle: "Senior Utvecklare & Lösningsarkitekt — Stockholm",
+    subtitle: "Senior utvecklare & lösningsarkitekt — Stockholm",
     bio1: "Jag har arbetat professionellt med mjukvaruutveckling sedan 2013. För mig är det viktigt med system som håller över tid, lösningar som är ärliga med sin komplexitet, och att bibehålla en genuin nyfikenhet på vad nya verktyg kan möjliggöra.",
     bio2: "Drygt 13 års erfarenhet av att bygga interna plattformar, migrationslösningar och styrningsverktyg (governance) på Microsofts plattform. Jag arbetar tvärfunktionellt genom hela leveranskedjan — från arkitektur till release — och använder idag AI-modeller som en kärndel i hur jag designar och bygger mjukvara.",
     scroll: "scrolla",
@@ -37,10 +37,11 @@ export const sv: Translations = {
       "forsvarsmakten-sharepoint": {
         role: "SharePoint-utvecklare",
         description: "Utvecklade och driftsatte ny funktionalitet på en omfattande SharePoint-plattform, samt ledde den tekniska migrationen från SharePoint 2016 till SharePoint Subscription Edition. Detta inkluderade att designa migrationsstrategin, utveckla verktygen och genomföra övergången helt utan driftavbrott.",
+        period: "2019 – nu",
       },
       trafikverket: {
         role: "SharePoint-utvecklare & Migrationsarkitekt",
-        description: "Designade och byggde en skräddarsydd migrationsplattform från grunden för att flytta Trafikverkets SharePoint-miljöer från 2010 till 2016. Arkitektoniserade och kodade hela pipelinen — exportskript, XML-transformeringslager och importverktyg — som hanterade allt innehåll, all struktur och metadata över flera komplexa miljöer.",
+        description: "Designade och byggde en skräddarsydd migrationsplattform från grunden för att flytta Trafikverkets SharePoint-miljöer från 2010 till 2016. Arkitekterade och kodade hela pipelinen — exportskript, XML-transformeringslager och importverktyg — som hanterade allt innehåll, all struktur och metadata över flera komplexa miljöer.",
       },
       receptkontroll: {
         role: ".NET & SharePoint-utvecklare",
@@ -53,11 +54,11 @@ export const sv: Translations = {
     items: [
       {
         heading: "Begränsningar före kod",
-        body: "Med över 13 år i branschen har jag lärt mig att de flesta tekniska problem egentligen är organisatoriska problem i kostym. Innan jag skriver en enda rad kod lägger jag tid på att förstå de begränsningar — i form av heritagesystem, governance-krav och intressenters förväntningar — som avgör om lösningen faktiskt kommer att hålla i produktion. På Försvarsmakten, där jag har varit engagerad sedan 2019, har det inneburit att både ansvara för aktiv funktionsutveckling och en fullständig plattformsmigration, samtidigt som den löpande driften säkrats.",
+        body: "Med över 13 år i branschen har jag lärt mig att de flesta tekniska problem egentligen är organisatoriska problem i kostym. Innan jag skriver en enda rad kod lägger jag tid på att förstå de begränsningar — i form av legacy-system, governance-krav och intressenters förväntningar — som avgör om lösningen faktiskt kommer att hålla i produktion. På Försvarsmakten, där jag har varit engagerad sedan 2019, har det inneburit att både ansvara för aktiv funktionsutveckling och en fullständig plattformsmigration, samtidigt som den löpande driften säkrats.",
       },
       {
         heading: "AI som vardagsverktyg",
-        body: "Jag använder AI-modeller — såsom OpenAI, Claude och GitHub Copilot — som vardagsverktyg, inte som en kul grej. De gör att jag kan röra mig snabbare, arbeta inom domäner jag inte hade tagit mig an på egen hand, och lägga mer tid på de beslut som faktiskt kräver erfarenhet. Jag har byggt och driftsatt kompletta produkter på det här sättet, inklusive en fullskalig Blazor-applikation och ett projekt som sträcker sig över både mobil och inbäddad programvara (firmware).",
+        body: "Jag använder AI-modeller — såsom OpenAI, Claude och GitHub Copilot — som vardagsverktyg, inte som en gimmick. De gör att jag kan röra mig snabbare, arbeta inom domäner jag inte hade tagit mig an på egen hand, och lägga mer tid på de beslut som faktiskt kräver erfarenhet. Jag har byggt och driftsatt kompletta produkter på det här sättet, inklusive en fullskalig Blazor-applikation och ett projekt som sträcker sig över både mobil och inbäddad programvara (firmware).",
       },
       {
         heading: "Helhetsansvar i leveransen",
@@ -67,6 +68,15 @@ export const sv: Translations = {
   },
   experience: {
     sectionLabel: "ERFARENHET",
+    dates: [
+      "2015 – 2018",
+      "apr – nov 2016",
+      "maj – jun 2016",
+      "2015 – 2016",
+      "2013 – 2019",
+      "2013 – 2014",
+      "2012 – 2013",
+    ],
     entries: [
       { role: ".NET-utvecklare", description: "Byggde och underhöll skräddarsydda .NET-lösningar för kommunala digitala tjänster inom Stockholms stad." },
       { role: "PowerShell-utvecklare", description: "Automatiserade operativa arbetsflöden via PowerShell åt Skatteverket." },
@@ -91,7 +101,7 @@ export const sv: Translations = {
       },
       firmware: {
         status: "PÅGÅR",
-        description: "Ett startup-projekt i produktfas inom outdoor och jakthundar — samutvecklat med en partner. Projektet omfattar specialanpassad hårdvara med firmware skriven i C++, parkopplad med en mobilapplikation. AI-modeller är centrala i utvecklingsprocessen, vilket gör att två personer effektivt kan arbeta tvärfunktionellt med både inbäddade system och mobilutveckling.",
+        description: "Ett projekt i produktfas inom outdoor och jakthundar — samutvecklat med en partner. Projektet omfattar specialanpassad hårdvara med firmware skriven i C++, parkopplad med en mobilapplikation. AI-modeller är centrala i utvecklingsprocessen, vilket gör att två personer effektivt kan arbeta tvärfunktionellt med både inbäddade system och mobilutveckling.",
       },
     },
   },
@@ -125,7 +135,7 @@ export const sv: Translations = {
   },
   contact: {
     sectionLabel: "KONTAKT",
-    title: "Senior Utvecklare & Lösningsarkitekt",
+    title: "Senior utvecklare & lösningsarkitekt",
     emailLabel: "E-post",
     phoneLabel: "Telefon",
     linkedinLabel: "LinkedIn",

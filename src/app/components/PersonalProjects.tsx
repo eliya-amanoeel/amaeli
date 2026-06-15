@@ -30,7 +30,7 @@ const projectsMeta: ProjectMeta[] = [
     id: "firmware",
     name: "Hardware & Mobile — Stealth",
     statusColor: "var(--app-blue)",
-    tags: ["C++", "Mobile", "Figma", "OpenAI API", "Claude / Anthropic"],
+    tags: ["C++", "Flutter", "Figma", "OpenAI API", "Claude / Anthropic"],
   },
 ];
 

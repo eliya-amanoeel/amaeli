@@ -15,7 +15,7 @@ export type Translations = {
   };
   selectedWork: {
     sectionLabel: string;
-    entries: Record<string, { role: string; description: string }>;
+    entries: Record<string, { role: string; description: string; period?: string }>;
   };
   howIWork: {
     sectionLabel: string;
@@ -23,6 +23,7 @@ export type Translations = {
   };
   experience: {
     sectionLabel: string;
+    dates?: string[];
     entries: Array<{ role: string; description: string }>;
   };
   personalProjects: {

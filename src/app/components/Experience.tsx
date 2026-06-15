@@ -12,7 +12,7 @@ const dates = [
 ];
 
 const clients = [
-  "Stockholm Stad · CGI Sverige",
+  "Stockholms stad · CGI Sverige",
   "Skatteverket · CGI Sverige",
   "Valmyndigheten · CGI Sverige",
   "CGI Collaboration Platform (CCP) · CGI Sverige",
@@ -33,7 +33,7 @@ export function Experience() {
             <div key={i} style={{ position: "relative" }}>
               <div style={{ position: "absolute", left: "-29px", top: "6px", width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "var(--app-border-strong)" }} />
               <span className="experience-date" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-accent)", display: "block", marginBottom: "4px" }}>
-                {dates[i]}
+                {(t.experience.dates?.[i] ?? dates[i])}
               </span>
               <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <span style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", fontWeight: 500, color: "var(--app-fg)" }}>

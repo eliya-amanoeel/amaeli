@@ -60,7 +60,7 @@ export function SelectedWork() {
                     {card.client}
                   </h2>
                   <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", fontWeight: 400, lineHeight: 1.5, color: "var(--app-muted)", margin: "0 0 16px 0" }}>
-                    {card.period} · {entry?.role}
+                    {entry?.period ?? card.period} · {entry?.role}
                   </p>
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "600px", margin: "0 0 20px 0" }}>
                     {entry?.description}
