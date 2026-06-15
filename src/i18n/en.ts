@@ -164,7 +164,5 @@ export const en: Translations = {
     emailLabel: "Email",
     phoneLabel: "Phone",
     linkedinLabel: "LinkedIn",
-    resumeLabel: "RESUMÉ",
-    downloadCopy: "download a copy ↓",
   },
 };

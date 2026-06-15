@@ -1,4 +1,3 @@
-import { type MouseEvent } from "react";
 import { SectionLabel } from "./SectionLabel";
 import { useT } from "../../context/LanguageContext";
 import photo from "../../imports/eliya-photo.webp";
@@ -18,30 +17,6 @@ function ContactRow({ label, href, display, external }: { label: string; href: s
         onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-muted)")}
       >
         {display}
-      </a>
-    </div>
-  );
-}
-
-function DownloadRow({ label, copy }: { label: string; copy: string }) {
-  const handlePrint = (e: MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    window.print();
-  };
-
-  return (
-    <div className="no-print" style={{ display: "grid", gridTemplateColumns: "96px 1fr", gap: "16px", alignItems: "baseline", padding: "10px 0", borderBottom: "1px solid var(--app-border)" }}>
-      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", fontWeight: 500, color: "var(--app-accent)", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-        {label}
-      </span>
-      <a
-        href="#"
-        onClick={handlePrint}
-        style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, color: "var(--app-muted)", textDecoration: "none", transition: "color 150ms ease", cursor: "pointer" }}
-        onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
-        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-muted)")}
-      >
-        {copy}
       </a>
     </div>
   );
@@ -78,7 +53,6 @@ export function Contact() {
           <ContactRow label={t.contact.emailLabel} href="mailto:contact@amaeli.se" display="contact@amaeli.se" />
           <ContactRow label={t.contact.phoneLabel} href="tel:+46702068908" display="+46 70-206 89 08" />
           <ContactRow label={t.contact.linkedinLabel} href="https://www.linkedin.com/in/eliya-amanoeel/" display="linkedin.com/in/eliya-amanoeel" external />
-          <DownloadRow label={t.contact.resumeLabel} copy={t.contact.downloadCopy} />
         </div>
 
       </div>

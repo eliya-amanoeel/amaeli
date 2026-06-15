@@ -1,8 +1,6 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
-@import './print.css';
-
 /* ── Scroll-triggered fade ─────────────────────────────────────────── */
 .fade-section {
   opacity: 0;
@@ -13,10 +11,6 @@
   opacity: 1;
   transform: translateY(0);
 }
-@media print {
-  .fade-section { opacity: 1 !important; transform: none !important; }
-}
-
 /* ── Responsive padding ─────────────────────────────────────────────── */
 @media (max-width: 640px) {
   .section-pad  { padding-left: 20px !important; padding-right: 20px !important; }

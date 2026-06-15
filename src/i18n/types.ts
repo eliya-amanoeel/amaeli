@@ -53,7 +53,5 @@ export type Translations = {
     emailLabel: string;
     phoneLabel: string;
     linkedinLabel: string;
-    resumeLabel: string;
-    downloadCopy: string;
   };
 };

@@ -93,7 +93,7 @@ export function Nav() {
           </a>
 
           <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-            <div style={{ alignSelf: "flex-start" }} className="no-print">
+            <div style={{ alignSelf: "flex-start" }}>
               <EdisonBulb />
             </div>
 

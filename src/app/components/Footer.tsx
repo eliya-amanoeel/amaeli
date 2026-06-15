@@ -1,7 +1,6 @@
 export function Footer() {
   return (
     <footer
-      className="no-print"
       style={{
         position: "fixed",
         bottom: 0,

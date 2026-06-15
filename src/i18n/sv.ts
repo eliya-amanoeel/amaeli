@@ -139,7 +139,5 @@ export const sv: Translations = {
     emailLabel: "E-post",
     phoneLabel: "Telefon",
     linkedinLabel: "LinkedIn",
-    resumeLabel: "CV",
-    downloadCopy: "ladda ned en kopia ↓",
   },
 };
