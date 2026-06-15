@@ -1,35 +1,24 @@
 import { SectionLabel } from "./SectionLabel";
+import { useT } from "../../context/LanguageContext";
 
 export function HowIWork() {
+  const { t } = useT();
+
   return (
     <section id="how-i-work" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="03" label="APPROACH" />
+        <SectionLabel number="03" label={t.howIWork.sectionLabel} />
         <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
-          <div>
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", color: "var(--app-accent)", letterSpacing: "0.08em", display: "block", marginBottom: "8px", textTransform: "uppercase" }}>
-              Constraints before code
-            </span>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", margin: 0 }}>
-              With over 13 years in the field, I've learned that most technical problems are organisational ones in disguise. Before writing any code, I spend time understanding the constraints — legacy systems, governance requirements, stakeholder expectations — that will determine whether the solution actually holds up in production. At Försvarsmakten, where I've been engaged since 2019, that meant owning both active feature development and a full platform migration while keeping live services running.
-            </p>
-          </div>
-          <div>
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", color: "var(--app-accent)", letterSpacing: "0.08em", display: "block", marginBottom: "8px", textTransform: "uppercase" }}>
-              AI as everyday tooling
-            </span>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", margin: 0 }}>
-              I use AI models — OpenAI, Claude, and GitHub Copilot — as everyday tools, not novelties. They let me move faster, work across domains I wouldn't have touched alone, and spend more time on the decisions that actually require experience. I've built and shipped complete products this way, including a full Blazor application and a project that spans mobile and embedded firmware.
-            </p>
-          </div>
-          <div>
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", color: "var(--app-accent)", letterSpacing: "0.08em", display: "block", marginBottom: "8px", textTransform: "uppercase" }}>
-              Full-spectrum delivery
-            </span>
-            <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", margin: 0 }}>
-              I work well both as the sole technical person in the room and as a senior contributor in a larger team. I'm comfortable translating between business stakeholders and implementation, running Scrum ceremonies, and taking end-to-end ownership from requirements to release.
-            </p>
-          </div>
+          {t.howIWork.items.map((item) => (
+            <div key={item.heading}>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", color: "var(--app-accent)", letterSpacing: "0.08em", display: "block", marginBottom: "8px", textTransform: "uppercase" }}>
+                {item.heading}
+              </span>
+              <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", margin: 0 }}>
+                {item.body}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

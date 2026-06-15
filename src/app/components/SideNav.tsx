@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { SECTIONS, scrollToSection } from "../navigation";
+import { useT } from "../../context/LanguageContext";
 
 export function SideNav() {
+  const { t } = useT();
   const [active, setActive] = useState<string>("work");
 
   useEffect(() => {
@@ -51,7 +53,7 @@ export function SideNav() {
       >
         // index
       </span>
-      {SECTIONS.map(({ id, label, num }) => (
+      {SECTIONS.map(({ id, num }) => (
         <a
           key={id}
           href={`#${id}`}
@@ -86,7 +88,7 @@ export function SideNav() {
           >
             {num}
           </span>
-          {label}
+          {t.nav.sections[id]}
         </a>
       ))}
     </nav>

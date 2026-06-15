@@ -1,12 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { SECTIONS, scrollToSection } from "../navigation";
+import { useT } from "../../context/LanguageContext";
+import { EdisonBulb } from "./EdisonBulb";
 
-interface NavProps {
-  isDark: boolean;
-  toggleTheme: () => void;
-}
-
-export function Nav({ isDark, toggleTheme }: NavProps) {
+export function Nav() {
+  const { lang, t, toggleLanguage } = useT();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -37,6 +35,18 @@ export function Nav({ isDark, toggleTheme }: NavProps) {
     setTimeout(() => scrollToSection(id), 220);
   };
 
+  const btnStyle = {
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    fontFamily: "'JetBrains Mono', monospace",
+    fontSize: "12px",
+    color: "var(--app-muted)",
+    letterSpacing: "0.06em",
+    padding: "4px 0",
+    transition: "color 150ms ease",
+  } as const;
+
   return (
     <>
       <nav
@@ -49,6 +59,7 @@ export function Nav({ isDark, toggleTheme }: NavProps) {
           backgroundColor: scrolled ? "var(--app-nav-bg-scrolled)" : "var(--app-nav-bg)",
           backdropFilter: scrolled ? "blur(8px)" : "none",
           borderBottom: scrolled ? "1px solid var(--app-border)" : "1px solid transparent",
+          overflow: "visible",
           transition: "border-color 150ms ease, backdrop-filter 150ms ease, background-color 200ms ease",
         }}
       >
@@ -81,39 +92,31 @@ export function Nav({ isDark, toggleTheme }: NavProps) {
             <span style={{ color: "var(--app-accent)" }}>EA</span>
           </a>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <label
-              className="uiverse-pixel-toggle"
-              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+          <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+            <div style={{ alignSelf: "flex-start" }} className="no-print">
+              <EdisonBulb />
+            </div>
+
+            <button
+              aria-label={lang === "en" ? "Switch to Swedish" : "Byt till engelska"}
+              onClick={toggleLanguage}
+              style={btnStyle}
+              onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
+              onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-muted)")}
             >
-              <input
-                type="checkbox"
-                className="uiverse-pixel-toggle-input"
-                checked={isDark}
-                onChange={toggleTheme}
-              />
-            </label>
+              [ {lang === "en" ? "sv" : "en"} ]
+            </button>
 
             <button
               className="nav-menu-btn"
               aria-label="Open navigation menu"
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen(true)}
-              style={{
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: "12px",
-                color: "var(--app-muted)",
-                letterSpacing: "0.06em",
-                padding: "4px 0",
-                transition: "color 150ms ease",
-              }}
+              style={btnStyle}
               onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
               onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-muted)")}
             >
-              [ menu ]
+              {t.nav.menu}
             </button>
           </div>
         </div>
@@ -146,15 +149,7 @@ export function Nav({ isDark, toggleTheme }: NavProps) {
             position: "absolute",
             top: "16px",
             right: "20px",
-            background: "none",
-            border: "none",
-            cursor: "pointer",
-            fontFamily: "'JetBrains Mono', monospace",
-            fontSize: "12px",
-            color: "var(--app-muted)",
-            letterSpacing: "0.06em",
-            padding: "4px 0",
-            transition: "color 150ms ease",
+            ...btnStyle,
           }}
           onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
           onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-muted)")}
@@ -176,7 +171,7 @@ export function Nav({ isDark, toggleTheme }: NavProps) {
           >
             // index
           </span>
-          {SECTIONS.map(({ id, label, num }) => (
+          {SECTIONS.map(({ id, num }) => (
             <a
               key={id}
               href={`#${id}`}
@@ -207,7 +202,7 @@ export function Nav({ isDark, toggleTheme }: NavProps) {
               >
                 {num}
               </span>
-              {label}
+              {t.nav.sections[id]}
             </a>
           ))}
         </div>

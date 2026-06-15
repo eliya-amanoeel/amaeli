@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import { useTheme } from "../hooks/useTheme";
+import { useLanguage } from "../hooks/useLanguage";
+import { LanguageContext } from "../context/LanguageContext";
 import { Nav } from "./components/Nav";
 import { SideNav } from "./components/SideNav";
 import { Hero } from "./components/Hero";
@@ -25,7 +26,7 @@ function setMetaTag(name: string, content: string, property = false) {
 }
 
 export default function App() {
-  const { isDark, toggleTheme } = useTheme();
+  const { lang, t, toggleLanguage } = useLanguage();
 
   useEffect(() => {
     console.log(
@@ -37,20 +38,20 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    document.title = "Eliya Amanoeel — Senior Developer & Solutions Architect";
-    document.documentElement.lang = "en";
-    setMetaTag("description", "Senior .NET and SharePoint developer based in Stockholm with 13+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.");
-    setMetaTag("og:title", "Eliya Amanoeel — Senior Developer & Solutions Architect", true);
-    setMetaTag("og:description", "Senior .NET and SharePoint developer based in Stockholm with 13+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.", true);
+    document.title = t.meta.title;
+    document.documentElement.lang = lang;
+    setMetaTag("description", t.meta.description);
+    setMetaTag("og:title", t.meta.title, true);
+    setMetaTag("og:description", t.meta.description, true);
     setMetaTag("og:url", "https://amaeli.se", true);
     setMetaTag("og:type", "website", true);
     setMetaTag("og:image", "https://amaeli.se/og-image.png", true);
     setMetaTag("og:image:width", "1200", true);
     setMetaTag("og:image:height", "630", true);
     setMetaTag("twitter:card", "summary");
-    setMetaTag("twitter:title", "Eliya Amanoeel — Senior Developer & Solutions Architect");
-    setMetaTag("twitter:description", "Senior .NET and SharePoint developer based in Stockholm with 13+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.");
-  }, []);
+    setMetaTag("twitter:title", t.meta.title);
+    setMetaTag("twitter:description", t.meta.description);
+  }, [lang, t]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -69,21 +70,23 @@ export default function App() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: "var(--app-bg)", minHeight: "100vh", fontFamily: "Inter, sans-serif", color: "var(--app-fg)", transition: "background-color 200ms ease, color 200ms ease" }}>
-      <Nav isDark={isDark} toggleTheme={toggleTheme} />
-      <SideNav />
-      <main style={{ paddingBottom: "calc(100vh - 480px)" }}>
-        <Hero />
-        <SelectedWork />
-        <HowIWork />
-        <Experience />
-        <PersonalProjects />
-        <Education />
-        <SpokenLanguages />
-        <Skills />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <LanguageContext.Provider value={{ lang, t, toggleLanguage }}>
+      <div style={{ backgroundColor: "var(--app-bg)", minHeight: "100vh", fontFamily: "Inter, sans-serif", color: "var(--app-fg)", transition: "background-color 200ms ease, color 200ms ease" }}>
+        <Nav />
+        <SideNav />
+        <main style={{ paddingBottom: "calc(100vh - 480px)" }}>
+          <Hero />
+          <SelectedWork />
+          <HowIWork />
+          <Experience />
+          <PersonalProjects />
+          <Education />
+          <SpokenLanguages />
+          <Skills />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </LanguageContext.Provider>
   );
 }

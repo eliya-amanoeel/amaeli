@@ -1,15 +1,13 @@
 import { SectionLabel } from "./SectionLabel";
-
-const certifications = [
-  "Core Solutions of Microsoft SharePoint Server 2013 (70-331, MCTS)",
-  "Programming in HTML5 with JavaScript and CSS3 (70-480, MCSD)",
-];
+import { useT } from "../../context/LanguageContext";
 
 export function Education() {
+  const { t } = useT();
+
   return (
     <section id="education" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="06" label="EDUCATION" />
+        <SectionLabel number="06" label={t.education.sectionLabel} />
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
           <div>
             <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-accent)", margin: "0 0 8px 0", letterSpacing: "0.05em" }}>
@@ -24,10 +22,10 @@ export function Education() {
           </div>
           <div>
             <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-accent)", margin: "0 0 12px 0", letterSpacing: "0.05em" }}>
-              CERTIFICATIONS
+              {t.education.certifications}
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              {certifications.map((cert) => (
+              {t.education.certs.map((cert) => (
                 <p key={cert} style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "var(--app-muted)", margin: 0, lineHeight: 1.5 }}>
                   {cert}
                 </p>

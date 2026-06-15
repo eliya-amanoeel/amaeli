@@ -1,5 +1,6 @@
 import { type MouseEvent } from "react";
 import { SectionLabel } from "./SectionLabel";
+import { useT } from "../../context/LanguageContext";
 import photo from "../../imports/eliya-photo.webp";
 
 function ContactRow({ label, href, display, external }: { label: string; href: string; display: string; external?: boolean }) {
@@ -22,7 +23,7 @@ function ContactRow({ label, href, display, external }: { label: string; href: s
   );
 }
 
-function DownloadRow() {
+function DownloadRow({ label, copy }: { label: string; copy: string }) {
   const handlePrint = (e: MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     window.print();
@@ -31,7 +32,7 @@ function DownloadRow() {
   return (
     <div className="no-print" style={{ display: "grid", gridTemplateColumns: "96px 1fr", gap: "16px", alignItems: "baseline", padding: "10px 0", borderBottom: "1px solid var(--app-border)" }}>
       <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", fontWeight: 500, color: "var(--app-accent)", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-        RESUMÉ
+        {label}
       </span>
       <a
         href="#"
@@ -40,17 +41,19 @@ function DownloadRow() {
         onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
         onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-muted)")}
       >
-        download a copy ↓
+        {copy}
       </a>
     </div>
   );
 }
 
 export function Contact() {
+  const { t } = useT();
+
   return (
     <section id="contact" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "80px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="09" label="CONTACT" />
+        <SectionLabel number="09" label={t.contact.sectionLabel} />
 
         <div style={{ display: "flex", alignItems: "center", gap: "24px", marginBottom: "32px" }}>
           <img
@@ -66,16 +69,16 @@ export function Contact() {
               Eliya Amanoeel
             </p>
             <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-muted)", margin: "4px 0 0 0", lineHeight: 1.4 }}>
-              Senior Developer & Solutions Architect
+              {t.contact.title}
             </p>
           </div>
         </div>
 
         <div style={{ borderTop: "1px solid var(--app-border)" }}>
-          <ContactRow label="Email" href="mailto:contact@amaeli.se" display="contact@amaeli.se" />
-          <ContactRow label="Phone" href="tel:+46702068908" display="+46 70-206 89 08" />
-          <ContactRow label="LinkedIn" href="https://www.linkedin.com/in/eliya-amanoeel/" display="linkedin.com/in/eliya-amanoeel" external />
-          <DownloadRow />
+          <ContactRow label={t.contact.emailLabel} href="mailto:contact@amaeli.se" display="contact@amaeli.se" />
+          <ContactRow label={t.contact.phoneLabel} href="tel:+46702068908" display="+46 70-206 89 08" />
+          <ContactRow label={t.contact.linkedinLabel} href="https://www.linkedin.com/in/eliya-amanoeel/" display="linkedin.com/in/eliya-amanoeel" external />
+          <DownloadRow label={t.contact.resumeLabel} copy={t.contact.downloadCopy} />
         </div>
 
       </div>

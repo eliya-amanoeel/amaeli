@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { TechTag } from "./TechTag";
+import { useT } from "../../context/LanguageContext";
 
 const FULL_NAME = "Eliya Amanoeel";
 const keySkills = ["C#", ".NET", "Azure", "Angular", "Blazor", "React", "PowerShell", "JavaScript", "DevOps Pipelines", "SharePoint"];
 
 export function Hero() {
+  const { t } = useT();
   const [displayed, setDisplayed] = useState("");
   const [typingDone, setTypingDone] = useState(false);
 
@@ -44,7 +46,7 @@ export function Hero() {
         </h1>
 
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", marginTop: "16px", marginBottom: 0 }}>
-          Senior Developer & Solutions Architect — Stockholm
+          {t.hero.subtitle}
         </p>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "24px" }}>
@@ -52,15 +54,15 @@ export function Hero() {
         </div>
 
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "560px", marginTop: "40px", marginBottom: 0 }}>
-          I've been writing software professionally since 2013. I care about systems that hold up, solutions that are honest about their complexity, and staying genuinely curious about what new tooling makes possible.
+          {t.hero.bio1}
         </p>
 
         <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "560px", marginTop: "20px", marginBottom: 0 }}>
-          13+ years building internal platforms, migration solutions, and governance tools on the Microsoft stack. I work across the full delivery chain — from architecture to release — and use AI models as a core part of how I design and build software today.
+          {t.hero.bio2}
         </p>
 
         <div className="scroll-hint no-print" style={{ marginTop: "56px" }}>
-          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "var(--app-subtle)", letterSpacing: "0.06em" }}>scroll</span>
+          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "var(--app-subtle)", letterSpacing: "0.06em" }}>{t.hero.scroll}</span>
           <span className="scroll-arrow" style={{ display: "block", color: "var(--app-subtle)", fontSize: "14px", marginTop: "4px" }}>↓</span>
         </div>
       </div>
