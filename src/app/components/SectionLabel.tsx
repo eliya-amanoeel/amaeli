@@ -6,6 +6,7 @@ interface Props {
 export function SectionLabel({ number, label }: Props) {
   return (
     <p
+      className="section-label"
       style={{
         fontFamily: "'JetBrains Mono', monospace",
         fontSize: "13px",

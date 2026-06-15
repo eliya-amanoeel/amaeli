@@ -59,7 +59,7 @@ export function Hero() {
           13+ years building internal platforms, migration solutions, and governance tools on the Microsoft stack. I work across the full delivery chain — from architecture to release — and use AI models as a core part of how I design and build software today.
         </p>
 
-        <div className="scroll-hint" style={{ marginTop: "56px" }}>
+        <div className="scroll-hint no-print" style={{ marginTop: "56px" }}>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "var(--app-subtle)", letterSpacing: "0.06em" }}>scroll</span>
           <span className="scroll-arrow" style={{ display: "block", color: "var(--app-subtle)", fontSize: "14px", marginTop: "4px" }}>↓</span>
         </div>

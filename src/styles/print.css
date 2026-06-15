@@ -5,20 +5,33 @@
     margin: 18mm 20mm 18mm 20mm;
   }
 
-  /* ── Reset dark background to white ── */
-  html,
-  body,
-  #root,
-  #root > div {
+  /* ── Force light palette regardless of active theme ── */
+  :root, html {
+    --app-bg: #F8F7F4;
+    --app-fg: #1A1917;
+    --app-muted: #5A5855;
+    --app-subtle: #888582;
+    --app-accent: #2a7a5a;
+    --app-blue: #1a5c9e;
+    --app-card-hover: transparent;
+    --app-border: #E0DDD8;
+    --app-border-strong: #D0CCC6;
+    --app-tag-bg: #e8f4ee;
+    --app-index: #C0BDB9;
+    --background: #ffffff;
+    --foreground: #111111;
+    --border: #dddddd;
+  }
+
+  /* ── Reset backgrounds ── */
+  html, body, #root, #root > div {
     background-color: #ffffff !important;
     color: #111111 !important;
     font-size: 11pt !important;
   }
 
-  /* ── Hide elements that don't belong in a CV PDF ── */
-  nav,
-  .no-print,
-  a[href="/eliya-amanoeel-cv.pdf"] {
+  /* ── Hide elements that don't belong in a CV ── */
+  nav, .no-print {
     display: none !important;
   }
 
@@ -40,78 +53,17 @@
 
   #hero h1 {
     font-size: 28pt !important;
-    color: #111111 !important;
     letter-spacing: 0.03em !important;
-  }
-
-  #hero p {
-    color: #444444 !important;
-  }
-
-  #hero a {
-    display: none !important;
   }
 
   /* ── Section labels ── */
   .section-label {
-    color: #2a7a5a !important;
     break-after: avoid;
-  }
-
-  /* ── Body text and secondary text ── */
-  p,
-  span,
-  li {
-    color: #333333 !important;
-  }
-
-  h1, h2, h3 {
-    color: #111111 !important;
-  }
-
-  /* ── Restore teal for experience dates ── */
-  .experience-date {
-    color: #2a7a5a !important;
-  }
-
-  /* ── Links: show URL inline for email/phone/linkedin ── */
-  a {
-    color: #1a5c9e !important;
-    text-decoration: none !important;
-  }
-
-  /* ── Tech tags: light print version ── */
-  span[style*="backgroundColor: rgb(26, 44, 61)"],
-  span[style*="background-color: rgb(26, 44, 61)"] {
-    background-color: #e8f4ee !important;
-    color: #1a5c40 !important;
-    border: 1px solid #b3d9c4 !important;
-  }
-
-  /* ── Dividers ── */
-  div[style*="backgroundColor: rgb(31, 33, 36)"],
-  div[style*="background-color: rgb(31, 33, 36)"] {
-    background-color: #dddddd !important;
-  }
-
-  /* ── Timeline border ── */
-  div[style*="borderLeft"] {
-    border-left-color: #cccccc !important;
   }
 
   /* ── Avoid breaking cards and entries across pages ── */
   section > div > div > div {
     break-inside: avoid;
-  }
-
-  /* ── Contact section: remove photo frame, tighten layout ── */
-  img {
-    filter: grayscale(100%) !important;
-  }
-
-  /* ── Remove hover background artefacts ── */
-  *[style*="backgroundColor: rgb(28, 30, 33)"] {
-    background-color: transparent !important;
   }
 
   /* ── Remove scroll-depth padding ── */
@@ -124,5 +76,16 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
     padding-bottom: 24pt !important;
+  }
+
+  /* ── Fade-in sections must be visible in print ── */
+  .fade-section {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* ── Photo: grayscale ── */
+  img {
+    filter: grayscale(100%) !important;
   }
 }
