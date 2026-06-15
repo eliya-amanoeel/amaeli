@@ -16,7 +16,7 @@ export function Skills() {
   return (
     <section id="skills" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="08" label={t.skills.sectionLabel} />
+        <SectionLabel number="09" label={t.skills.sectionLabel} />
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
           {t.skills.groups.map((group, i) => (
             <div key={i}>

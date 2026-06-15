@@ -15,6 +15,7 @@ export const en: Translations = {
       experience: "experience",
       projects: "projects",
       education: "education",
+      employment: "employment",
       languages: "languages",
       skills: "skills",
       contact: "contact",
@@ -110,6 +111,7 @@ export const en: Translations = {
   },
   personalProjects: {
     sectionLabel: "PERSONAL PROJECTS",
+    ownershipNote: "Full ownership — requirements · UI/UX · development · hosting · maintenance",
     entries: {
       marnarsay: {
         status: "LIVE",
@@ -127,6 +129,9 @@ export const en: Translations = {
           "A product-stage venture in the field of outdoor sports and hunting dogs — co-developed with a partner. Involves custom hardware with firmware written in C++, paired with a companion mobile application. AI models are central to how this is being built, enabling two people to work effectively across embedded systems and mobile development.",
       },
     },
+  },
+  employment: {
+    sectionLabel: "EMPLOYMENT",
   },
   education: {
     sectionLabel: "EDUCATION",

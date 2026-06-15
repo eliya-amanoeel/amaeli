@@ -27,7 +27,11 @@ export type Translations = {
   };
   personalProjects: {
     sectionLabel: string;
+    ownershipNote: string;
     entries: Record<string, { status: string; description: string }>;
+  };
+  employment: {
+    sectionLabel: string;
   };
   education: {
     sectionLabel: string;

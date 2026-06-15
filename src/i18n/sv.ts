@@ -15,6 +15,7 @@ export const sv: Translations = {
       experience: "erfarenhet",
       projects: "projekt",
       education: "utbildning",
+      employment: "anställningar",
       languages: "språk",
       skills: "kompetenser",
       contact: "kontakt",
@@ -73,11 +74,12 @@ export const sv: Translations = {
       { role: "SharePoint Online-utvecklare", description: "Utvecklade SharePoint Online-funktioner för CGI:s interna, globala samarbetsplattform." },
       { role: "SharePoint-utvecklare", description: "Mitt längsta uppdrag — levererade och underhöll SharePoint-lösningar för Inspektionen för vård och omsorg (IVO)." },
       { role: "SharePoint-konsult & On-site Support", description: "SharePoint-konsultation och support på plats hos en av Sveriges största tjänstepensionsförvaltare." },
-      { role: "Trainee SharePoint-utvecklare", description: "First professional role; built SharePoint solutions and grew core .NET development skills." },
+      { role: "Trainee SharePoint-utvecklare", description: "Första professionella rollen — byggde SharePoint-lösningar och lade grunden för .NET-utveckling." },
     ],
   },
   personalProjects: {
     sectionLabel: "EGNA PROJEKT",
+    ownershipNote: "Fullt ägarskap — krav · UI/UX · utveckling · drift · underhåll",
     entries: {
       marnarsay: {
         status: "LIVE",
@@ -92,6 +94,9 @@ export const sv: Translations = {
         description: "Ett startup-projekt i produktfas inom outdoor och jakthundar — samutvecklat med en partner. Projektet omfattar specialanpassad hårdvara med firmware skriven i C++, parkopplad med en mobilapplikation. AI-modeller är centrala i utvecklingsprocessen, vilket gör att två personer effektivt kan arbeta tvärfunktionellt med både inbäddade system och mobilutveckling.",
       },
     },
+  },
+  employment: {
+    sectionLabel: "ANSTÄLLNINGAR",
   },
   education: {
     sectionLabel: "UTBILDNING",

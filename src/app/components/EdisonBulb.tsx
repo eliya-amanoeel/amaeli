@@ -13,7 +13,7 @@ export function EdisonBulb() {
     api.start({ from: { y: 10 }, to: { y: 0 } });
   };
 
-  const lit = isDark;
+  const lit = !isDark;
 
   return (
     <button
@@ -36,7 +36,7 @@ export function EdisonBulb() {
           viewBox="0 0 18 47"
           fill="none"
           style={{
-            filter: lit ? "drop-shadow(0 0 4px currentColor)" : "none",
+            filter: lit ? "drop-shadow(0 0 6px rgba(255, 200, 40, 1)) drop-shadow(0 0 12px rgba(255, 180, 20, 0.8))" : "none",
             transition: "filter 400ms ease",
           }}
         >

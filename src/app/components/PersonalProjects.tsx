@@ -52,7 +52,7 @@ export function PersonalProjects() {
                   onMouseLeave={() => setHovered(null)}
                   style={{ padding: "32px 16px", backgroundColor: hovered === project.id ? "var(--app-card-hover)" : "transparent", transition: "background-color 150ms ease", cursor: "default" }}
                 >
-                  <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "8px" }}>
+                  <div style={{ display: "flex", alignItems: "baseline", gap: "12px", marginBottom: "4px" }}>
                     {project.url ? (
                       <a
                         href={project.url}
@@ -73,6 +73,9 @@ export function PersonalProjects() {
                       {entry?.status}
                     </span>
                   </div>
+                  <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", color: "var(--app-muted)", letterSpacing: "0.04em", margin: "0 0 12px 0" }}>
+                    {t.personalProjects.ownershipNote}
+                  </p>
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "600px", margin: "0 0 20px 0" }}>
                     {entry?.description}
                   </p>

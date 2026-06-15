@@ -7,7 +7,7 @@ export function SpokenLanguages() {
   return (
     <section id="languages" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "64px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="07" label={t.spokenLanguages.sectionLabel} />
+        <SectionLabel number="08" label={t.spokenLanguages.sectionLabel} />
         <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
           {t.spokenLanguages.entries.map((lang) => (
             <div key={lang.name} style={{ display: "flex", alignItems: "baseline", gap: "16px" }}>

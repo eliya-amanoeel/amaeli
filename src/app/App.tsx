@@ -10,6 +10,7 @@ import { Experience } from "./components/Experience";
 import { Education } from "./components/Education";
 import { SpokenLanguages } from "./components/SpokenLanguages";
 import { PersonalProjects } from "./components/PersonalProjects";
+import { Employment } from "./components/Employment";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -81,6 +82,7 @@ export default function App() {
           <Experience />
           <PersonalProjects />
           <Education />
+          <Employment />
           <SpokenLanguages />
           <Skills />
           <Contact />
