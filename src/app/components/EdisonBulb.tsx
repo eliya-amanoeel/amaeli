@@ -44,7 +44,7 @@ export function EdisonBulb() {
           <line
             x1="9" y1="0" x2="9" y2="14"
             stroke="currentColor"
-            strokeOpacity={lit ? 0.7 : 0.35}
+            strokeOpacity={lit ? 0.7 : 0.6}
             strokeWidth="1.5"
             strokeDasharray="1.5 1.5"
           />
@@ -52,14 +52,14 @@ export function EdisonBulb() {
           {/* Socket cap */}
           <rect
             x="4" y="14" width="10" height="9" rx="1"
-            fill="currentColor" fillOpacity={lit ? 0.5 : 0.2}
-            stroke="currentColor" strokeOpacity={lit ? 0.8 : 0.4}
+            fill="currentColor" fillOpacity={lit ? 0.5 : 0.25}
+            stroke="currentColor" strokeOpacity={lit ? 0.8 : 0.7}
             strokeWidth="1"
           />
           <line x1="4.5" y1="17.5" x2="13.5" y2="17.5"
-            stroke="currentColor" strokeOpacity={lit ? 0.2 : 0.08} strokeWidth="0.75" />
+            stroke="currentColor" strokeOpacity={lit ? 0.2 : 0.18} strokeWidth="0.75" />
           <line x1="4.5" y1="20.5" x2="13.5" y2="20.5"
-            stroke="currentColor" strokeOpacity={lit ? 0.2 : 0.08} strokeWidth="0.75" />
+            stroke="currentColor" strokeOpacity={lit ? 0.2 : 0.18} strokeWidth="0.75" />
 
           {/* Glass */}
           <path
@@ -70,30 +70,29 @@ export function EdisonBulb() {
                C 18 28, 18 24, 14 23
                Z"
             fill="currentColor" fillOpacity={lit ? 0.1 : 0}
-            stroke="currentColor" strokeOpacity={lit ? 0.75 : 0.38}
+            stroke="currentColor" strokeOpacity={lit ? 0.75 : 0.65}
             strokeWidth="1.1"
             style={{ transition: "fill-opacity 400ms ease, stroke-opacity 400ms ease" }}
           />
 
-          {/* Filament */}
-          <line x1="7" y1="28" x2="7" y2="40"
-            stroke="currentColor" strokeOpacity={lit ? 0.95 : 0.2}
-            strokeWidth={lit ? 1.2 : 0.8} strokeLinecap="round"
+          {/* Filament — spiral coil */}
+          <line x1="9" y1="23" x2="9" y2="27"
+            stroke="currentColor" strokeOpacity={lit ? 0.95 : 0.55}
+            strokeWidth="0.9" strokeLinecap="round"
             style={{ transition: "stroke-opacity 400ms ease" }}
           />
-          <line x1="11" y1="28" x2="11" y2="40"
-            stroke="currentColor" strokeOpacity={lit ? 0.95 : 0.2}
-            strokeWidth={lit ? 1.2 : 0.8} strokeLinecap="round"
-            style={{ transition: "stroke-opacity 400ms ease" }}
-          />
-          <path d="M 7 40 C 7 44 11 44 11 40"
-            stroke="currentColor" strokeOpacity={lit ? 0.95 : 0.2}
-            strokeWidth={lit ? 1.2 : 0.8} strokeLinecap="round" fill="none"
-            style={{ transition: "stroke-opacity 400ms ease" }}
-          />
-          <line x1="7" y1="28" x2="11" y2="28"
-            stroke="currentColor" strokeOpacity={lit ? 0.95 : 0.2}
-            strokeWidth={lit ? 1.2 : 0.8} strokeLinecap="round"
+          <path
+            d="M 9 27
+               C 12.5 27 12.5 29 9 29
+               C 5.5  29 5.5  31 9 31
+               C 12.5 31 12.5 33 9 33
+               C 5.5  33 5.5  35 9 35
+               C 12.5 35 12.5 37 9 37
+               C 5.5  37 5.5  39 9 39
+               C 12.5 39 12.5 41 9 41
+               C 5.5  41 5.5  43 9 43"
+            stroke="currentColor" strokeOpacity={lit ? 0.95 : 0.55}
+            strokeWidth={lit ? 1.4 : 1.0} strokeLinecap="round" fill="none"
             style={{ transition: "stroke-opacity 400ms ease" }}
           />
         </svg>
