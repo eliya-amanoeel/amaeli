@@ -10,7 +10,7 @@ export function EdisonBulb() {
 
   const handleClick = () => {
     toggleTheme();
-    api.start({ from: { y: 10 }, to: { y: 0 } });
+    api.start({ from: { y: 3 }, to: { y: 0 } });
   };
 
   const lit = !isDark;
