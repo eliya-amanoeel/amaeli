@@ -1,0 +1,59 @@
+@media print {
+  /* ── Force light palette ─────────────────────────────────────────── */
+  :root, html {
+    --app-bg:            #F8F7F4;
+    --app-fg:            #1A1917;
+    --app-muted:         #5A5855;
+    --app-subtle:        #7A7773;
+    --app-accent:        #2a7a5a;
+    --app-blue:          #1a5c9e;
+    --app-card-hover:    transparent;
+    --app-tag-bg:        #e8f4ee;
+    --app-border:        #E0DDD8;
+    --app-border-strong: #D0CCC6;
+  }
+
+  /* ── Hide UI chrome ──────────────────────────────────────────────── */
+  nav, .no-print {
+    display: none !important;
+  }
+
+  /* ── Remove scroll padding from main ────────────────────────────── */
+  main {
+    padding-bottom: 0 !important;
+  }
+
+  /* ── Fade-in sections must be visible ───────────────────────────── */
+  .fade-section {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* ── Section spacing reduced for print ──────────────────────────── */
+  .section-pad {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  /* ── Remove fixed footer from flow ──────────────────────────────── */
+  footer {
+    position: static !important;
+    border-top: none !important;
+    backdrop-filter: none !important;
+  }
+
+  /* ── Keep each entry on one page ────────────────────────────────── */
+  .print-entry {
+    break-inside: avoid;
+  }
+
+  /* ── Keep section heading with the content that follows ─────────── */
+  .section-label {
+    break-after: avoid;
+  }
+
+  /* ── Keep date with the entry below it ──────────────────────────── */
+  .experience-date {
+    break-after: avoid;
+  }
+}

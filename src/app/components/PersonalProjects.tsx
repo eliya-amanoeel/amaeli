@@ -46,7 +46,7 @@ export function PersonalProjects() {
           {projectsMeta.map((project, i) => {
             const entry = t.personalProjects.entries[project.id];
             return (
-              <div key={project.id}>
+              <div key={project.id} className="print-entry">
                 <div
                   onMouseEnter={() => setHovered(project.id)}
                   onMouseLeave={() => setHovered(null)}

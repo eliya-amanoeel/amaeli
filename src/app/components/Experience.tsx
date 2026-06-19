@@ -30,7 +30,7 @@ export function Experience() {
         <SectionLabel number="04" label={t.experience.sectionLabel} />
         <div style={{ borderLeft: "1px solid var(--app-border-strong)", paddingLeft: "24px", display: "flex", flexDirection: "column", gap: "32px" }}>
           {t.experience.entries.map((entry, i) => (
-            <div key={i} style={{ position: "relative" }}>
+            <div key={i} className="print-entry" style={{ position: "relative" }}>
               <div style={{ position: "absolute", left: "-29px", top: "6px", width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "var(--app-border-strong)" }} />
               <span className="experience-date" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-accent)", display: "block", marginBottom: "4px" }}>
                 {(t.experience.dates?.[i] ?? dates[i])}

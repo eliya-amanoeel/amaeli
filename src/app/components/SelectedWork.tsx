@@ -49,7 +49,7 @@ export function SelectedWork() {
           {work.map((card, i) => {
             const entry = t.selectedWork.entries[card.id];
             return (
-              <div key={card.id}>
+              <div key={card.id} className="print-entry">
                 <div
                   id={`work-${card.id}`}
                   onMouseEnter={() => setHovered(card.id)}

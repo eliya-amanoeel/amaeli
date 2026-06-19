@@ -61,7 +61,7 @@ export function Hero() {
           {t.hero.bio2}
         </p>
 
-        <div className="scroll-hint" style={{ marginTop: "56px" }}>
+        <div className="scroll-hint no-print" style={{ marginTop: "56px" }}>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "var(--app-subtle)", letterSpacing: "0.06em" }}>{t.hero.scroll}</span>
           <span className="scroll-arrow" style={{ display: "block", color: "var(--app-subtle)", fontSize: "14px", marginTop: "4px" }}>↓</span>
         </div>

@@ -10,7 +10,7 @@ export function HowIWork() {
         <SectionLabel number="03" label={t.howIWork.sectionLabel} />
         <div style={{ display: "flex", flexDirection: "column", gap: "40px" }}>
           {t.howIWork.items.map((item) => (
-            <div key={item.heading}>
+            <div key={item.heading} className="print-entry">
               <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", color: "var(--app-accent)", letterSpacing: "0.08em", display: "block", marginBottom: "8px", textTransform: "uppercase" }}>
                 {item.heading}
               </span>
