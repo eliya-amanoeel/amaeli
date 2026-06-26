@@ -7,7 +7,7 @@ const skillNames = [
   ["Office 365", "Azure", "Blazor", "Angular", "SharePoint SE", "SharePoint Online", "SharePoint 2016", "SharePoint 2013", "SharePoint 2010", "SharePoint 2007"],
   ["C#", ".NET", "ASP.NET", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS", "React", "XML", "C++"],
   ["Azure DevOps", "DevOps Pipelines", "Visual Studio", "VS Code", "Figma", "TFS", "GIT", "BizTalk", "DocAve", "Scrum", "Agile"],
-  ["TDD", "SpecFlow", "MVC", "REST APIs", "CI/CD"],
+  ["TDD", "SpecFlow", "Playwright", "E2E Testing", "MVC", "REST APIs", "CI/CD"],
 ];
 
 export function Skills() {

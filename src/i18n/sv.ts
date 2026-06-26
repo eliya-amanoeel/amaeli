@@ -32,7 +32,7 @@ export const sv: Translations = {
     entries: {
       "forsvarsmakten-fullstack": {
         role: "Fullstack .NET-utvecklare",
-        description: "Utvecklade funktioner i hela stacken för Mitt Försvarsmakten — en omfattande intern HR-applikation som används inom hela Försvarsmakten. Arbetade i ett Scrum-team med helhetsansvar: från att fånga upp krav och skriva kod, till driftsättning i produktion.",
+        description: "Utvecklade funktioner i hela stacken för Mitt Försvarsmakten — en omfattande intern HR-applikation som används inom hela Försvarsmakten, byggd i Blazor. Arbetade i ett Scrum-team med helhetsansvar: från att fånga upp krav och skriva kod, till driftsättning i produktion. Införde end-to-end-testtäckning för applikationen med Playwright.",
       },
       "forsvarsmakten-sharepoint": {
         role: "SharePoint-utvecklare",

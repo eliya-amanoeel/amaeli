@@ -33,7 +33,7 @@ export const en: Translations = {
       "forsvarsmakten-fullstack": {
         role: "Fullstack .NET Developer",
         description:
-          "Developed features across the full stack of Mitt Försvarsmakten — a large internal HR application used across the Swedish Armed Forces. Worked in a Scrum team with end-to-end responsibility: picking up requirements, writing code, and shipping to production.",
+          "Developed features across the full stack of Mitt Försvarsmakten — a large internal HR application used across the Swedish Armed Forces, built in Blazor. Worked in a Scrum team with end-to-end responsibility: picking up requirements, writing code, and shipping to production. Introduced end-to-end test coverage for the application using Playwright.",
       },
       "forsvarsmakten-sharepoint": {
         role: "SharePoint Developer",
