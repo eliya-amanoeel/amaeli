@@ -2,7 +2,7 @@ import type { Translations } from "./types";
 
 export const sv: Translations = {
   meta: {
-    title: "Eliya Amanoeel — Senior Developer & Solutions Architect",
+    title: "Eliya Amanoeel — Senior fullstack-utvecklare",
     description:
       "Senior .NET- och SharePoint-utvecklare baserad i Stockholm med 13+ års erfarenhet av att bygga interna plattformar, migrationslösningar och styrningsverktyg på Microsoft-stacken.",
   },
@@ -22,7 +22,7 @@ export const sv: Translations = {
     },
   },
   hero: {
-    subtitle: "Senior utvecklare & lösningsarkitekt — Stockholm",
+    subtitle: "Senior fullstack-utvecklare — Stockholm",
     bio1: "Jag har arbetat professionellt med mjukvaruutveckling sedan 2013. För mig är det viktigt med system som håller över tid, lösningar som är ärliga med sin komplexitet, och att bibehålla en genuin nyfikenhet på vad nya verktyg kan möjliggöra.",
     bio2: "Drygt 13 års erfarenhet av att bygga interna plattformar, migrationslösningar och styrningsverktyg (governance) på Microsofts plattform. Jag arbetar tvärfunktionellt genom hela leveranskedjan — från arkitektur till release — och använder idag AI-modeller som en kärndel i hur jag designar och bygger mjukvara.",
     scroll: "scrolla",
@@ -135,7 +135,7 @@ export const sv: Translations = {
   },
   contact: {
     sectionLabel: "KONTAKT",
-    title: "Senior utvecklare & lösningsarkitekt",
+    title: "Senior fullstack-utvecklare",
     emailLabel: "E-post",
     phoneLabel: "Telefon",
     linkedinLabel: "LinkedIn",

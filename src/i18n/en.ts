@@ -2,7 +2,7 @@ import type { Translations } from "./types";
 
 export const en: Translations = {
   meta: {
-    title: "Eliya Amanoeel — Senior Developer & Solutions Architect",
+    title: "Eliya Amanoeel — Senior Full-Stack Developer",
     description:
       "Senior .NET and SharePoint developer based in Stockholm with 13+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.",
   },
@@ -22,7 +22,7 @@ export const en: Translations = {
     },
   },
   hero: {
-    subtitle: "Senior Developer & Solutions Architect — Stockholm",
+    subtitle: "Senior Full-Stack Developer — Stockholm",
     bio1: "I've been writing software professionally since 2013. I care about systems that hold up, solutions that are honest about their complexity, and staying genuinely curious about what new tooling makes possible.",
     bio2: "13+ years building internal platforms, migration solutions, and governance tools on the Microsoft stack. I work across the full delivery chain — from architecture to release — and use AI models as a core part of how I design and build software today.",
     scroll: "scroll",
@@ -160,7 +160,7 @@ export const en: Translations = {
   },
   contact: {
     sectionLabel: "CONTACT",
-    title: "Senior Developer & Solutions Architect",
+    title: "Senior Full-Stack Developer",
     emailLabel: "Email",
     phoneLabel: "Phone",
     linkedinLabel: "LinkedIn",
