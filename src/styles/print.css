@@ -1,6 +1,8 @@
 @media print {
   /* ── Force light palette ─────────────────────────────────────────── */
-  :root, html {
+  /* html.dark (0,1,1) beats a bare :root, so match its specificity here
+     or the dark background survives into print as a full black page. */
+  :root, html, html.dark, .dark {
     --app-bg:            #F8F7F4;
     --app-fg:            #1A1917;
     --app-muted:         #5A5855;
