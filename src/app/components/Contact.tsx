@@ -50,7 +50,7 @@ export function Contact() {
         </div>
 
         <div style={{ borderTop: "1px solid var(--app-border)" }}>
-          <ContactRow label={t.contact.emailLabel} href="mailto:contact@amaeli.se" display="contact@amaeli.se" />
+          <ContactRow label={t.contact.emailLabel} href="mailto:eliya.amanoeel@gmail.com" display="eliya.amanoeel@gmail.com" />
           <ContactRow label={t.contact.phoneLabel} href="tel:+46702068908" display="+46 70-206 89 08" />
           <ContactRow label={t.contact.linkedinLabel} href="https://www.linkedin.com/in/eliya-amanoeel/" display="linkedin.com/in/eliya-amanoeel" external />
         </div>
