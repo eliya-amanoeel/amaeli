@@ -12,6 +12,7 @@ import { SpokenLanguages } from "./components/SpokenLanguages";
 import { PersonalProjects } from "./components/PersonalProjects";
 import { Employment } from "./components/Employment";
 import { Skills } from "./components/Skills";
+import { About } from "./components/About";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
@@ -85,6 +86,7 @@ export default function App() {
           <Employment />
           <SpokenLanguages />
           <Skills />
+          <About />
           <Contact />
         </main>
         <Footer />

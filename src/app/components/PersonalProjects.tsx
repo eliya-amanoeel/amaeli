@@ -13,6 +13,12 @@ interface ProjectMeta {
 
 const projectsMeta: ProjectMeta[] = [
   {
+    id: "akerogarden",
+    name: "akerogarden.se",
+    statusColor: "var(--app-blue)",
+    tags: ["C#", ".NET 10", "Blazor", "EF Core", "PostgreSQL", "Azure", "Bicep", "Azure DevOps", "Redis", "Playwright", "GDPR"],
+  },
+  {
     id: "marnarsay",
     name: "kor.marnarsay.se",
     url: "https://kor.marnarsay.se",
@@ -74,7 +80,7 @@ export function PersonalProjects() {
                     </span>
                   </div>
                   <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", color: "var(--app-muted)", letterSpacing: "0.04em", margin: "0 0 12px 0" }}>
-                    {t.personalProjects.ownershipNote}
+                    {entry?.ownership ?? t.personalProjects.ownershipNote}
                   </p>
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "600px", margin: "0 0 20px 0" }}>
                     {entry?.description}

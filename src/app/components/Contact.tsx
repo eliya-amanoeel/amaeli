@@ -28,7 +28,7 @@ export function Contact() {
   return (
     <section id="contact" style={{ paddingLeft: "48px", paddingRight: "48px", paddingBottom: "80px" }} className="section-pad fade-section">
       <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-        <SectionLabel number="10" label={t.contact.sectionLabel} />
+        <SectionLabel number="11" label={t.contact.sectionLabel} />
 
         <div style={{ display: "flex", alignItems: "center", gap: "24px", marginBottom: "32px" }}>
           <img

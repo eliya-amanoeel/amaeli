@@ -134,8 +134,13 @@ export function Nav() {
           backgroundColor: "var(--app-nav-bg)",
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
+          /* Scrolls when the list is taller than the viewport. Centring is done
+             with margin:auto on the inner block instead of justify-content, which
+             would make the overflowing top unreachable on short screens. */
+          overflowY: "auto",
+          overscrollBehavior: "contain",
+          WebkitOverflowScrolling: "touch",
+          padding: "64px 24px 32px",
           opacity: menuOpen ? 1 : 0,
           pointerEvents: menuOpen ? "all" : "none",
           transition: "opacity 200ms ease",
@@ -146,9 +151,12 @@ export function Nav() {
           aria-label="Close navigation menu"
           onClick={() => setMenuOpen(false)}
           style={{
-            position: "absolute",
+            /* fixed, not absolute: the overlay scrolls, and the close button
+               must stay reachable at the top of a long list. */
+            position: "fixed",
             top: "16px",
             right: "20px",
+            zIndex: 1,
             ...btnStyle,
           }}
           onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
@@ -157,7 +165,7 @@ export function Nav() {
           [ × ]
         </button>
 
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "4px" }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "4px", margin: "auto", flexShrink: 0 }}>
           <span
             aria-hidden="true"
             style={{

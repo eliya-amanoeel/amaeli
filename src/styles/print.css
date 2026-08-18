@@ -13,6 +13,18 @@
     --app-tag-bg:        #e8f4ee;
     --app-border:        #E0DDD8;
     --app-border-strong: #D0CCC6;
+
+    /* body uses bg-background/text-foreground, not the --app-* tokens.
+       Left dark, they paint the leftover space on the last page black. */
+    --background:        #F8F7F4;
+    --foreground:        #1A1917;
+  }
+
+  /* The body background propagates to the page canvas, so it fills every
+     area the content wrapper does not cover. */
+  html, body {
+    background-color: #F8F7F4 !important;
+    color: #1A1917 !important;
   }
 
   /* ── Hide UI chrome ──────────────────────────────────────────────── */

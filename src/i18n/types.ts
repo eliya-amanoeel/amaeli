@@ -29,7 +29,7 @@ export type Translations = {
   personalProjects: {
     sectionLabel: string;
     ownershipNote: string;
-    entries: Record<string, { status: string; description: string }>;
+    entries: Record<string, { status: string; description: string; ownership?: string }>;
   };
   employment: {
     sectionLabel: string;
@@ -46,6 +46,10 @@ export type Translations = {
   skills: {
     sectionLabel: string;
     groups: Array<{ label: string }>;
+  };
+  about: {
+    sectionLabel: string;
+    paragraphs: string[];
   };
   contact: {
     sectionLabel: string;

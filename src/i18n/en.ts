@@ -18,6 +18,7 @@ export const en: Translations = {
       employment: "employment",
       languages: "languages",
       skills: "skills",
+      about: "person",
       contact: "contact",
     },
   },
@@ -61,7 +62,7 @@ export const en: Translations = {
       },
       {
         heading: "AI as everyday tooling",
-        body: "I use AI models — OpenAI, Claude, and GitHub Copilot — as everyday tools, not novelties. They let me move faster, work across domains I wouldn't have touched alone, and spend more time on the decisions that actually require experience. I've built and shipped complete products this way, including a full Blazor application and a project that spans mobile and embedded firmware.",
+        body: "I use AI models — OpenAI, Claude, and GitHub Copilot — as everyday tools, not novelties. They let me move faster, work across domains I wouldn't have touched alone, and spend more time on the decisions that actually require experience. I've built and shipped complete products this way — two full Blazor applications, a React marketing site, and a project that spans mobile and embedded firmware.",
       },
       {
         heading: "Full-spectrum delivery",
@@ -113,6 +114,13 @@ export const en: Translations = {
     sectionLabel: "PERSONAL PROJECTS",
     ownershipNote: "Full ownership — requirements · UI/UX · development · hosting · maintenance",
     entries: {
+      akerogarden: {
+        status: "IN PROGRESS",
+        ownership:
+          "Full ownership — requirements · architecture · UI/UX · development · infrastructure · maintenance",
+        description:
+          "A booking and administration system for a rural retreat in Norrtälje, replacing a decommissioned CMS. Built solo in .NET 10 Blazor — a static-rendered public site with a guest booking funnel, and an interactive admin panel covering the full booking lifecycle, pricing rules, meals, facilities and cleaning. Wrote the requirements specification myself and designed the data model around it, with GDPR-driven retention, consent and audit handling. Runs on Azure infrastructure defined entirely in Bicep, deployed through Azure DevOps pipelines, and covered by unit, integration and Playwright end-to-end tests.",
+      },
       marnarsay: {
         status: "LIVE",
         description:
@@ -156,6 +164,13 @@ export const en: Translations = {
       { label: "Languages" },
       { label: "Tools & DevOps" },
       { label: "Practices" },
+    ],
+  },
+  about: {
+    sectionLabel: "THE PERSON BEHIND THE CODE",
+    paragraphs: [
+      "I sing. I've been part of a local choir in Södertälje since 2008 — a soloist from the very start, and its choir leader since 2021. It's the longest-running thing in my life outside the profession, and the only one where I regularly stand in front of a group with no screen between us. It's also the choir I built kor.marnarsay.se for — the programme tool further up came out of a problem I was sitting with myself.",
+      "The rest of my time goes to technology in a more hands-on form. I 3D-print and design a fair share of the models myself, and I enjoy DIY projects that mix printed parts, circuit boards and assembly programming. And there's always something at home that needs fixing — I find it hard to leave alone.",
     ],
   },
   contact: {

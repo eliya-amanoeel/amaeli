@@ -8,7 +8,8 @@ export const SECTIONS = [
   { id: "employment",  num: "07" },
   { id: "languages",   num: "08" },
   { id: "skills",      num: "09" },
-  { id: "contact",     num: "10" },
+  { id: "about",       num: "10" },
+  { id: "contact",     num: "11" },
 ] as const;
 
 export function scrollToSection(id: string) {

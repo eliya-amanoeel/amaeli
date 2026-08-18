@@ -18,6 +18,7 @@ export const sv: Translations = {
       employment: "anställningar",
       languages: "språk",
       skills: "kompetenser",
+      about: "personen",
       contact: "kontakt",
     },
   },
@@ -58,7 +59,7 @@ export const sv: Translations = {
       },
       {
         heading: "AI som vardagsverktyg",
-        body: "Jag använder AI-modeller — såsom OpenAI, Claude och GitHub Copilot — som vardagsverktyg, inte som en gimmick. De gör att jag kan röra mig snabbare, arbeta inom domäner jag inte hade tagit mig an på egen hand, och lägga mer tid på de beslut som faktiskt kräver erfarenhet. Jag har byggt och driftsatt kompletta produkter på det här sättet, inklusive en fullskalig Blazor-applikation och ett projekt som sträcker sig över både mobil och inbäddad programvara (firmware).",
+        body: "Jag använder AI-modeller — såsom OpenAI, Claude och GitHub Copilot — som vardagsverktyg, inte som en gimmick. De gör att jag kan röra mig snabbare, arbeta inom domäner jag inte hade tagit mig an på egen hand, och lägga mer tid på de beslut som faktiskt kräver erfarenhet. Jag har byggt och driftsatt kompletta produkter på det här sättet — två fullskaliga Blazor-applikationer, en React-baserad marknadswebbplats och ett projekt som sträcker sig över både mobil och inbäddad programvara (firmware).",
       },
       {
         heading: "Helhetsansvar i leveransen",
@@ -91,6 +92,11 @@ export const sv: Translations = {
     sectionLabel: "EGNA PROJEKT",
     ownershipNote: "Fullt ägarskap — krav · UI/UX · utveckling · drift · underhåll",
     entries: {
+      akerogarden: {
+        status: "PÅGÅR",
+        ownership: "Fullt ägarskap — krav · arkitektur · UI/UX · utveckling · infrastruktur · underhåll",
+        description: "Ett boknings- och administrationssystem för en gård utanför Norrtälje, som ersätter ett avvecklat CMS. Byggt helt på egen hand i .NET 10 Blazor — en statiskt renderad publik webbplats med bokningsflöde för gäster, och en interaktiv adminpanel som täcker hela bokningens livscykel, prisregler, måltider, faciliteter och städning. Jag skrev kravspecifikationen själv och designade datamodellen utifrån den, med GDPR-styrd gallring, samtyckeshantering och spårbarhet. Systemet körs på Azure-infrastruktur helt definierad i Bicep, driftsätts via Azure DevOps-pipelines och täcks av enhets-, integrations- och Playwright-tester (E2E).",
+      },
       marnarsay: {
         status: "LIVE",
         description: "En komplett webbapplikation för en lokal kör för att skapa, lagra och redigera psalmer, samt sammanställa tryckta program till gudstjänster. Byggd helt på egen hand i Blazor med en skräddarsydd datamodell för psalmstruktur och programsammansättning. Används aktivt idag.",
@@ -131,6 +137,13 @@ export const sv: Translations = {
       { label: "Språk" },
       { label: "Verktyg & DevOps" },
       { label: "Metoder" },
+    ],
+  },
+  about: {
+    sectionLabel: "PERSONEN BAKOM KODEN",
+    paragraphs: [
+      "Jag sjunger. Sedan 2008 är jag med i en lokal kör i Södertälje — solist ända från början, och körledare sedan 2021. Det är den längsta sammanhängande saken i mitt liv vid sidan av yrket, och den enda där jag regelbundet står inför en grupp utan en skärm mellan oss. Det är också för den kören jag byggde kor.marnarsay.se — programverktyget längre upp kom ur ett problem jag satt med själv.",
+      "Resten av tiden går åt till teknik i mer handfast form. Jag 3D-printar och designar en hel del av modellerna själv, och gillar DIY-projekt som blandar utskrivna delar, kretskort och assemblerprogrammering. Och så finns det alltid något hemma som ska fixas eller lagas — jag har svårt att låta bli.",
     ],
   },
   contact: {

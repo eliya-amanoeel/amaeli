@@ -4,10 +4,10 @@ import { useT } from "../../context/LanguageContext";
 
 const skillNames = [
   ["OpenAI API", "Claude / Anthropic", "GitHub Copilot", "Prompt Engineering"],
-  ["Office 365", "Azure", "Blazor", "Angular", "SharePoint SE", "SharePoint Online", "SharePoint 2016", "SharePoint 2013", "SharePoint 2010", "SharePoint 2007"],
+  ["Office 365", "Azure", "Blazor", "Angular", "PostgreSQL", "EF Core", "SharePoint SE", "SharePoint Online", "SharePoint 2016", "SharePoint 2013", "SharePoint 2010", "SharePoint 2007"],
   ["C#", ".NET", "ASP.NET", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS", "React", "XML", "C++"],
-  ["Azure DevOps", "DevOps Pipelines", "Visual Studio", "VS Code", "Figma", "TFS", "GIT", "BizTalk", "DocAve", "Scrum", "Agile"],
-  ["TDD", "SpecFlow", "Playwright", "E2E Testing", "MVC", "REST APIs", "CI/CD"],
+  ["Azure DevOps", "DevOps Pipelines", "Bicep", "IaC", "Redis", "Visual Studio", "VS Code", "Figma", "TFS", "GIT", "BizTalk", "DocAve", "Scrum", "Agile"],
+  ["TDD", "SpecFlow", "Playwright", "E2E Testing", "Integration Testing", "GDPR / Data Protection", "Accessibility (WCAG)", "MVC", "REST APIs", "CI/CD"],
 ];
 
 export function Skills() {
