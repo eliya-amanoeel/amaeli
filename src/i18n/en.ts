@@ -169,7 +169,7 @@ export const en: Translations = {
   about: {
     sectionLabel: "THE PERSON BEHIND THE CODE",
     paragraphs: [
-      "I sing. I've been part of a local choir in Södertälje since 2008 — a soloist from the very start, and its choir leader since 2021. It's the longest-running thing in my life outside the profession, and the only one where I regularly stand in front of a group with no screen between us. It's also the choir I built kor.marnarsay.se for — the programme tool further up came out of a problem I was sitting with myself.",
+      "I sing. I've been part of a local choir in Södertälje since 2008 — a soloist from the very start, and its choir leader since 2021. It's also the choir I built kor.marnarsay.se for — the programme tool further up came out of a problem I was sitting with myself.",
       "The rest of my time goes to technology in a more hands-on form. I 3D-print and design a fair share of the models myself, and I enjoy DIY projects that mix printed parts, circuit boards and assembly programming. And there's always something at home that needs fixing — I find it hard to leave alone.",
     ],
   },

@@ -142,7 +142,7 @@ export const sv: Translations = {
   about: {
     sectionLabel: "PERSONEN BAKOM KODEN",
     paragraphs: [
-      "Jag sjunger. Sedan 2008 är jag med i en lokal kör i Södertälje — solist ända från början, och körledare sedan 2021. Det är den längsta sammanhängande saken i mitt liv vid sidan av yrket, och den enda där jag regelbundet står inför en grupp utan en skärm mellan oss. Det är också för den kören jag byggde kor.marnarsay.se — programverktyget längre upp kom ur ett problem jag satt med själv.",
+      "Jag sjunger. Sedan 2008 är jag med i en lokal kör i Södertälje — solist ända från början, och körledare sedan 2021. Det är också för den kören jag byggde kor.marnarsay.se — programverktyget längre upp kom ur ett problem jag satt med själv.",
       "Resten av tiden går åt till teknik i mer handfast form. Jag 3D-printar och designar en hel del av modellerna själv, och gillar DIY-projekt som blandar utskrivna delar, kretskort och assemblerprogrammering. Och så finns det alltid något hemma som ska fixas eller lagas — jag har svårt att låta bli.",
     ],
   },
