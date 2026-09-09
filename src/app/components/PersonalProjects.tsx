@@ -15,7 +15,8 @@ const projectsMeta: ProjectMeta[] = [
   {
     id: "akerogarden",
     name: "akerogarden.se",
-    statusColor: "var(--app-blue)",
+    url: "https://akerogarden.se",
+    statusColor: "var(--app-accent)",
     tags: ["C#", ".NET 10", "Blazor", "EF Core", "PostgreSQL", "Azure", "Bicep", "Azure DevOps", "Redis", "Playwright", "GDPR"],
   },
   {

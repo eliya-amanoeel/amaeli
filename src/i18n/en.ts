@@ -115,7 +115,7 @@ export const en: Translations = {
     ownershipNote: "Full ownership — requirements · UI/UX · development · hosting · maintenance",
     entries: {
       akerogarden: {
-        status: "IN PROGRESS",
+        status: "LIVE",
         ownership:
           "Full ownership — requirements · architecture · UI/UX · development · infrastructure · maintenance",
         description:

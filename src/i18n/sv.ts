@@ -93,7 +93,7 @@ export const sv: Translations = {
     ownershipNote: "Fullt ägarskap — krav · UI/UX · utveckling · drift · underhåll",
     entries: {
       akerogarden: {
-        status: "PÅGÅR",
+        status: "LIVE",
         ownership: "Fullt ägarskap — krav · arkitektur · UI/UX · utveckling · infrastruktur · underhåll",
         description: "Ett boknings- och administrationssystem för en gård utanför Norrtälje, som ersätter ett avvecklat CMS. Byggt helt på egen hand i .NET 10 Blazor — en statiskt renderad publik webbplats med bokningsflöde för gäster, och en interaktiv adminpanel som täcker hela bokningens livscykel, prisregler, måltider, faciliteter och städning. Jag skrev kravspecifikationen själv och designade datamodellen utifrån den, med GDPR-styrd gallring, samtyckeshantering och spårbarhet. Systemet körs på Azure-infrastruktur helt definierad i Bicep, driftsätts via Azure DevOps-pipelines och täcks av enhets-, integrations- och Playwright-tester (E2E).",
       },
