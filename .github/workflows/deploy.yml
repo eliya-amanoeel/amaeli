@@ -3,10 +3,20 @@ name: Build & Deploy
 on:
   workflow_dispatch:
 
-jobs:
-  build-and-deploy:
-    runs-on: self-hosted
+# Read-only token: nothing in this workflow writes back to the repo.
+permissions:
+  contents: read
 
+# Never run two deploys at once; a second click waits for the first.
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  # Build on a clean, disposable GitHub-hosted machine. npm install scripts
+  # never run on our own servers (ADR 0008 in the homelab repo).
+  build:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,8 +33,23 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to IIS
-        shell: powershell
-        run: |
-          robocopy dist C:\inetpub\wwwroot\amaeli /E /PURGE /NFL /NDL /NJH /NJS
-          if ($LASTEXITCODE -le 7) { exit 0 } else { exit $LASTEXITCODE }
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 7
+
+  # Proxmox: the amaeli LXC container. Only copies files — no Node, no npm.
+  deploy-linux:
+    needs: build
+    runs-on: [self-hosted, linux]
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: Deploy to /var/www/amaeli
+        run: rsync -a --delete dist/ /var/www/amaeli/
