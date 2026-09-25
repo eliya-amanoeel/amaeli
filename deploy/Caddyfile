@@ -16,9 +16,5 @@
 	@immutable path /assets/* /fonts/*
 	header @immutable Cache-Control "public, max-age=31536000, immutable"
 
-	# The build still ships IIS's web.config. IIS never served it; Caddy would.
-	@iis_config path /web.config
-	respond @iis_config 404
-
 	file_server
 }
