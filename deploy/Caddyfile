@@ -1,0 +1,24 @@
+# amaeli: static Vite build, one page, no client-side routing.
+# Plain HTTP on :80; HTTPS is edge's job (homelab ADR 0008).
+# Installed as /etc/caddy/Caddyfile in LXC 101.
+# Headers and caching translated from the site's IIS web.config.
+:80 {
+	root * /var/www/amaeli
+	encode zstd gzip
+
+	header {
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "SAMEORIGIN"
+		Referrer-Policy "strict-origin-when-cross-origin"
+	}
+
+	# Vite puts a content hash in these filenames, so they can be cached forever.
+	@immutable path /assets/* /fonts/*
+	header @immutable Cache-Control "public, max-age=31536000, immutable"
+
+	# The build still ships IIS's web.config. IIS never served it; Caddy would.
+	@iis_config path /web.config
+	respond @iis_config 404
+
+	file_server
+}
