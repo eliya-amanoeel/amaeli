@@ -1,6 +1,6 @@
 # amaeli: static Vite build, one page, no client-side routing.
 # Plain HTTP on :80; HTTPS is edge's job (homelab ADR 0008).
-# Installed as /etc/caddy/Caddyfile in LXC 101.
+# Installed as /etc/caddy/Caddyfile in the amaeli LXC container.
 # Headers and caching translated from the site's IIS web.config.
 :80 {
 	root * /var/www/amaeli
