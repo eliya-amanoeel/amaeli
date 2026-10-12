@@ -28,9 +28,11 @@ export const sv: Translations = {
     bio2: "Drygt 13 års .NET-utveckling på Microsofts plattform: interna plattformar, migrationslösningar och styrningsverktyg (governance), och på senare tid Blazor-applikationer i .NET 10 byggda AI-först med Claude. Jag arbetar tvärfunktionellt genom hela leveranskedjan, från arkitektur till release.",
     scroll: "scrolla",
   },
+  links: {
+    source: "Källkod",
+  },
   selectedWork: {
     sectionLabel: "UTVALDA PROJEKT",
-    linkLabels: { live: "Live", source: "Källkod" },
     entries: {
       "forsvarsmakten-inventeringsportalen": {
         role: "Ledande .NET-utvecklare",
@@ -110,6 +112,7 @@ export const sv: Translations = {
       },
       firmware: {
         status: "PÅGÅR",
+        ownership: "Ägarskap för mjukvaran — firmware · mobilapp · webbplats · hårdvara av min partner",
         description: "Ett projekt i produktfas inom outdoor och jakthundar — samutvecklat med en partner. Projektet omfattar specialanpassad hårdvara med firmware skriven i C++, parkopplad med en mobilapplikation. AI-modeller är centrala i utvecklingsprocessen, vilket gör att två personer effektivt kan arbeta tvärfunktionellt med både inbäddade system och mobilutveckling.",
       },
     },

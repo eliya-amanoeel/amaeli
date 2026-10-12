@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { SectionLabel } from "./SectionLabel";
 import { TechTag } from "./TechTag";
+import { LinkLine, type EntryLink } from "./LinkLine";
 import { useT } from "../../context/LanguageContext";
 
 interface WorkCard {
@@ -8,7 +9,7 @@ interface WorkCard {
   client: string;
   period: string;
   tags: string[];
-  links?: Array<{ kind: "live" | "source"; url: string }>;
+  links?: EntryLink[];
 }
 
 const work: WorkCard[] = [
@@ -76,26 +77,7 @@ export function SelectedWork() {
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "600px", margin: "0 0 20px 0" }}>
                     {entry?.description}
                   </p>
-                  {card.links && (
-                    <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", lineHeight: 1.5, color: "var(--app-muted)", margin: "0 0 20px 0" }}>
-                      {card.links.map((link, j) => (
-                        <span key={link.url}>
-                          {j > 0 && " · "}
-                          {t.selectedWork.linkLabels[link.kind]}:{" "}
-                          <a
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: "var(--app-fg)", textDecoration: "none", transition: "color 150ms ease" }}
-                            onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-blue)")}
-                            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
-                          >
-                            {link.url.replace(/^https?:\/\//, "")} ↗
-                          </a>
-                        </span>
-                      ))}
-                    </p>
-                  )}
+                  {card.links && <LinkLine links={card.links} />}
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {card.tags.map((tag) => (
                       <TechTag key={tag} label={tag} />

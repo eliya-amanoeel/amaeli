@@ -13,9 +13,11 @@ export type Translations = {
     bio2: string;
     scroll: string;
   };
+  links: {
+    source: string;
+  };
   selectedWork: {
     sectionLabel: string;
-    linkLabels: { live: string; source: string };
     entries: Record<string, { role: string; description: string; period?: string }>;
   };
   howIWork: {

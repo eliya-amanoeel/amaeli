@@ -28,9 +28,11 @@ export const en: Translations = {
     bio2: "13+ years of .NET development on the Microsoft stack: internal platforms, migration solutions and governance tools, and most recently .NET 10 Blazor applications built AI-first with Claude. I work across the full delivery chain, from architecture to release.",
     scroll: "scroll",
   },
+  links: {
+    source: "Source",
+  },
   selectedWork: {
     sectionLabel: "SELECTED WORK",
-    linkLabels: { live: "Live", source: "Source" },
     entries: {
       "forsvarsmakten-inventeringsportalen": {
         role: "Lead .NET Developer",
@@ -137,6 +139,7 @@ export const en: Translations = {
       },
       firmware: {
         status: "IN PROGRESS",
+        ownership: "Software ownership — firmware · mobile app · website · hardware by my partner",
         description:
           "A product-stage venture in the field of outdoor sports and hunting dogs — co-developed with a partner. Involves custom hardware with firmware written in C++, paired with a companion mobile application. AI models are central to how this is being built, enabling two people to work effectively across embedded systems and mobile development.",
       },
