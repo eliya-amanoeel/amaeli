@@ -11,10 +11,10 @@ export function Education() {
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
           <div>
             <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", color: "var(--app-accent)", margin: "0 0 8px 0", letterSpacing: "0.05em" }}>
-              Aug 2011 – Jan 2013
+              {t.education.period}
             </p>
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: "14px", fontWeight: 500, color: "var(--app-fg)", margin: "0 0 2px 0", lineHeight: 1.4 }}>
-              SharePoint Development
+              {t.education.programme}
             </p>
             <p style={{ fontFamily: "Inter, sans-serif", fontSize: "13px", color: "var(--app-muted)", margin: 0 }}>
               Nackademin Yrkeshögskola

@@ -2,6 +2,7 @@ import { SectionLabel } from "./SectionLabel";
 import { useT } from "../../context/LanguageContext";
 
 const dates = [
+  "2019 – present",
   "2015 – 2018",
   "Apr – Nov 2016",
   "May – Jun 2016",
@@ -12,11 +13,12 @@ const dates = [
 ];
 
 const clients = [
+  "Försvarsmakten · CAG Arete",
   "Stockholms stad · CGI Sverige",
   "Skatteverket · CGI Sverige",
   "Valmyndigheten · CGI Sverige",
   "CGI Collaboration Platform (CCP) · CGI Sverige",
-  "IVO — Inspektionen för Vård och Omsorg · CGI Sverige",
+  "IVO — Inspektionen för vård och omsorg · CGI Sverige",
   "Alecta · CGI Sverige",
   "Cybercom",
 ];

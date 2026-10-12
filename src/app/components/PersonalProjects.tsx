@@ -13,13 +13,6 @@ interface ProjectMeta {
 
 const projectsMeta: ProjectMeta[] = [
   {
-    id: "akerogarden",
-    name: "akerogarden.se",
-    url: "https://akerogarden.se",
-    statusColor: "var(--app-accent)",
-    tags: ["C#", ".NET 10", "Blazor", "EF Core", "PostgreSQL", "Azure", "Bicep", "Azure DevOps", "Redis", "Playwright", "GDPR"],
-  },
-  {
     id: "marnarsay",
     name: "kor.marnarsay.se",
     url: "https://kor.marnarsay.se",
@@ -37,7 +30,7 @@ const projectsMeta: ProjectMeta[] = [
     id: "firmware",
     name: "Hardware & Mobile — Stealth",
     statusColor: "var(--app-blue)",
-    tags: ["C++", "Flutter", "Figma", "OpenAI API", "Claude / Anthropic"],
+    tags: ["C++", "Flutter", "Figma", "OpenAI API", "Claude"],
   },
 ];
 

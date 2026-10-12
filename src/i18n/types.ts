@@ -15,6 +15,7 @@ export type Translations = {
   };
   selectedWork: {
     sectionLabel: string;
+    linkLabels: { live: string; source: string };
     entries: Record<string, { role: string; description: string; period?: string }>;
   };
   howIWork: {
@@ -33,9 +34,12 @@ export type Translations = {
   };
   employment: {
     sectionLabel: string;
+    periods: string[];
   };
   education: {
     sectionLabel: string;
+    period: string;
+    programme: string;
     certifications: string;
     certs: string[];
   };

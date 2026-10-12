@@ -3,11 +3,11 @@ import { TechTag } from "./TechTag";
 import { useT } from "../../context/LanguageContext";
 
 const skillNames = [
-  ["OpenAI API", "Claude / Anthropic", "GitHub Copilot", "Prompt Engineering"],
-  ["Office 365", "Azure", "Blazor", "Angular", "PostgreSQL", "EF Core", "SharePoint SE", "SharePoint Online", "SharePoint 2016", "SharePoint 2013", "SharePoint 2010", "SharePoint 2007"],
-  ["C#", ".NET", "ASP.NET", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS", "React", "XML", "C++"],
-  ["Azure DevOps", "DevOps Pipelines", "Bicep", "IaC", "Redis", "Visual Studio", "VS Code", "Figma", "TFS", "GIT", "BizTalk", "DocAve", "Scrum", "Agile"],
-  ["TDD", "SpecFlow", "Playwright", "E2E Testing", "Integration Testing", "GDPR / Data Protection", "Accessibility (WCAG)", "MVC", "REST APIs", "CI/CD"],
+  ["OpenAI API", "Claude", "Claude Code", "GitHub Copilot", "Prompt Engineering"],
+  ["Microsoft 365", "Azure", "Active Directory", "Blazor", "Angular", "WinForms", "SQL Server", "PostgreSQL", "EF Core", "SharePoint SE", "SharePoint Online", "SharePoint 2016", "SharePoint 2013", "SharePoint 2010", "SharePoint 2007"],
+  ["C#", ".NET", "ASP.NET", "MVC", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS", "React", "XML", "C++"],
+  ["Azure DevOps", "Bicep", "IaC", "Redis", "Visual Studio", "VS Code", "Figma", "TFS", "Git", "BizTalk", "DocAve"],
+  ["Clean Architecture", "TDD", "xUnit", "SpecFlow", "Playwright", "E2E Testing", "Integration Testing", "GDPR / Data Protection", "Accessibility (WCAG)", "REST APIs", "CI/CD", "Scrum", "Agile"],
 ];
 
 export function Skills() {

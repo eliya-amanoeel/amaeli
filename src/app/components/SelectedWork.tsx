@@ -8,30 +8,41 @@ interface WorkCard {
   client: string;
   period: string;
   tags: string[];
+  links?: Array<{ kind: "live" | "source"; url: string }>;
 }
 
 const work: WorkCard[] = [
   {
-    id: "forsvarsmakten-fullstack",
-    client: "Försvarsmakten",
-    period: "2024",
-    tags: ["C#", ".NET", "Angular", "MVC", "Azure DevOps", "GIT"],
+    id: "forsvarsmakten-inventeringsportalen",
+    client: "Försvarsmakten — Inventeringsportalen",
+    period: "2026 – present",
+    tags: ["Claude", "C#", ".NET 10", "Blazor", "EF Core", "SQL Server", "Clean Architecture", "Active Directory", "Azure DevOps", "Playwright"],
   },
   {
-    id: "forsvarsmakten-sharepoint",
-    client: "Försvarsmakten",
-    period: "2019 – present",
-    tags: ["C#", "PowerShell", "Azure DevOps", "TDD", "SpecFlow", "SharePoint SE", "SharePoint 2016"],
+    id: "akerogarden",
+    client: "Åkerögården — Booking & Admin System",
+    period: "2025 – present",
+    tags: ["Claude Code", "C#", ".NET 10", "Blazor", "EF Core", "PostgreSQL", "Azure", "Bicep", "Azure DevOps", "Playwright"],
+    links: [
+      { kind: "live", url: "https://akerogarden.se" },
+      { kind: "source", url: "https://github.com/eliya-amanoeel/akerogarden" },
+    ],
+  },
+  {
+    id: "forsvarsmakten-fullstack",
+    client: "Försvarsmakten — Mitt Försvarsmakten",
+    period: "2024",
+    tags: ["C#", ".NET", "Angular", "MVC", "Playwright", "Azure DevOps", "Git"],
   },
   {
     id: "trafikverket",
     client: "Trafikverket",
     period: "2016 – 2019",
-    tags: ["C#", "CSOM", "PowerShell", "XML", "TFS", "SharePoint 2010", "SharePoint 2016"],
+    tags: ["C#", ".NET Framework", "WinForms", "CSOM", "XML", "PowerShell", "TFS", "SharePoint"],
   },
   {
     id: "receptkontroll",
-    client: "Receptkontroll — IVO",
+    client: "ReceptKontroll — IVO",
     period: "2013 – 2019",
     tags: ["C#", ".NET", "BizTalk", "PowerShell", "JavaScript", "TFS", "SharePoint 2007"],
   },
@@ -65,6 +76,26 @@ export function SelectedWork() {
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.7, color: "var(--app-muted)", maxWidth: "600px", margin: "0 0 20px 0" }}>
                     {entry?.description}
                   </p>
+                  {card.links && (
+                    <p style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "13px", lineHeight: 1.5, color: "var(--app-muted)", margin: "0 0 20px 0" }}>
+                      {card.links.map((link, j) => (
+                        <span key={link.url}>
+                          {j > 0 && " · "}
+                          {t.selectedWork.linkLabels[link.kind]}:{" "}
+                          <a
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ color: "var(--app-fg)", textDecoration: "none", transition: "color 150ms ease" }}
+                            onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-blue)")}
+                            onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--app-fg)")}
+                          >
+                            {link.url.replace(/^https?:\/\//, "")} ↗
+                          </a>
+                        </span>
+                      ))}
+                    </p>
+                  )}
                   <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
                     {card.tags.map((tag) => (
                       <TechTag key={tag} label={tag} />

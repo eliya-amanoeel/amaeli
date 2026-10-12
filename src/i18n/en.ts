@@ -2,9 +2,9 @@ import type { Translations } from "./types";
 
 export const en: Translations = {
   meta: {
-    title: "Eliya Amanoeel — Senior Full-Stack Developer",
+    title: "Eliya Amanoeel — Senior Full-Stack .NET Developer",
     description:
-      "Senior .NET and SharePoint developer based in Stockholm with 13+ years of experience building internal platforms, migration solutions, and governance tools on the Microsoft stack.",
+      "Senior .NET developer based in Stockholm with 13+ years on the Microsoft stack — internal platforms, migration solutions and governance tools, and most recently .NET 10 Blazor applications built AI-first with Claude.",
   },
   nav: {
     menu: "[ menu ]",
@@ -23,28 +23,34 @@ export const en: Translations = {
     },
   },
   hero: {
-    subtitle: "Senior Full-Stack Developer — Stockholm",
+    subtitle: "Senior Full-Stack .NET Developer — Stockholm",
     bio1: "I've been writing software professionally since 2013. I care about systems that hold up, solutions that are honest about their complexity, and staying genuinely curious about what new tooling makes possible.",
-    bio2: "13+ years building internal platforms, migration solutions, and governance tools on the Microsoft stack. I work across the full delivery chain — from architecture to release — and use AI models as a core part of how I design and build software today.",
+    bio2: "13+ years of .NET development on the Microsoft stack: internal platforms, migration solutions and governance tools, and most recently .NET 10 Blazor applications built AI-first with Claude. I work across the full delivery chain, from architecture to release.",
     scroll: "scroll",
   },
   selectedWork: {
     sectionLabel: "SELECTED WORK",
+    linkLabels: { live: "Live", source: "Source" },
     entries: {
-      "forsvarsmakten-fullstack": {
-        role: "Fullstack .NET Developer",
+      "forsvarsmakten-inventeringsportalen": {
+        role: "Lead .NET Developer",
         description:
-          "Developed features across the full stack of Mitt Försvarsmakten — a large internal HR application used across the Swedish Armed Forces, built in Blazor. Worked in a Scrum team with end-to-end responsibility: picking up requirements, writing code, and shipping to production. Introduced end-to-end test coverage for the application using Playwright.",
+          "Lead developer on Inventeringsportalen, a .NET 10 Blazor Server application that managers across the Swedish Armed Forces use to keep their staff records in line with Active Directory. Built AI-first within the organisation's rules for AI use, with Claude as a pair programmer. I designed the solution in Clean Architecture around a domain model that enforces the inventory rules itself, built single sign-on with role-based access, and delivered admin tooling for data imports, reference data and controlled inventory periods. Deployed through Azure DevOps pipelines, covered by xUnit and Playwright end-to-end tests, and tested against fictional data once complete.",
       },
-      "forsvarsmakten-sharepoint": {
-        role: "SharePoint Developer",
+      akerogarden: {
+        role: "Sole .NET Developer & Architect",
         description:
-          "Developed and shipped new functionality across a large SharePoint platform, and led the technical migration from SharePoint 2016 to SharePoint Subscription Edition — including designing the migration approach, writing the tooling, and executing the transition without disrupting live services.",
+          "Designed and built, and now operate, the booking and administration system for Åkerögården, a rural retreat in Norrtälje, live with real guests since September 2026. A .NET 10 Blazor solution with a static-rendered public site and booking funnel, and an Interactive Server admin panel covering the full booking lifecycle: a state machine enforced in the domain, deposit handling, nightly scheduled jobs, GDPR-driven retention and an audit trail. Built AI-first with Claude Code as a pair programmer. I wrote the requirements specification, and kept it in the project's shared context together with the architecture rules and a pre-merge review checklist, so every change was planned before any code was written and checked against that checklist before merge. Runs on Azure infrastructure defined entirely in Bicep and deployed through Azure DevOps pipelines. Covered by xUnit unit tests, integration tests against real PostgreSQL and Redis containers, and Playwright end-to-end tests with accessibility checks.",
+      },
+      "forsvarsmakten-fullstack": {
+        role: "Full-Stack .NET Developer",
+        description:
+          "Developed features across the full stack of Mitt Försvarsmakten — a large internal HR application used across the Swedish Armed Forces, built with Angular and ASP.NET MVC. Worked in a Scrum team with end-to-end responsibility: picking up requirements, writing code and shipping to production. Introduced end-to-end test coverage for the application using Playwright.",
       },
       trafikverket: {
-        role: "SharePoint Developer & Migration Architect",
+        role: ".NET Developer & Migration Architect",
         description:
-          "Designed and built a custom migration platform from scratch to move Trafikverket's SharePoint environments from 2010 to 2016. Architected and coded the full pipeline — export scripts, XML transformation layers, and import tooling — that handled all content, structure, and metadata across multiple complex environments.",
+          "Designed and built a custom migration platform from scratch in C# and .NET to move Trafikverket's SharePoint environments from 2010 to 2016: two WinForms desktop applications for export and import, connected by an XML transformation layer and built on the SharePoint client object model (CSOM). Together they handled all content, structure and metadata across more than 2,000 site collections in multiple complex environments.",
       },
       receptkontroll: {
         role: ".NET & SharePoint Developer",
@@ -62,7 +68,7 @@ export const en: Translations = {
       },
       {
         heading: "AI as everyday tooling",
-        body: "I use AI models — OpenAI, Claude, and GitHub Copilot — as everyday tools, not novelties. They let me move faster, work across domains I wouldn't have touched alone, and spend more time on the decisions that actually require experience. I've built and shipped complete products this way — two full Blazor applications, a React marketing site, and a project that spans mobile and embedded firmware.",
+        body: "I use AI — Claude, GitHub Copilot and OpenAI's models — as everyday tools, not novelties, in client work and my own projects alike. My workflow is plan-first: the approach is worked out and reviewed before any code is written, and architecture rules, design decisions and documentation are kept in shared context so every change follows the project's conventions. It lets me move faster, work across domains I wouldn't have touched alone, and spend more time on the decisions that actually require experience — while the judgment and the responsibility for what ships stay with me.",
       },
       {
         heading: "Full-spectrum delivery",
@@ -73,6 +79,11 @@ export const en: Translations = {
   experience: {
     sectionLabel: "EXPERIENCE",
     entries: [
+      {
+        role: "SharePoint Developer",
+        description:
+          "Developed new functionality on a large SharePoint platform and led the technical migration from SharePoint 2016 to SharePoint Subscription Edition without disrupting live services.",
+      },
       {
         role: ".NET Developer",
         description:
@@ -94,9 +105,9 @@ export const en: Translations = {
           "Developed SharePoint Online features for CGI's internal global collaboration platform.",
       },
       {
-        role: "SharePoint Developer",
+        role: ".NET & SharePoint Developer",
         description:
-          "Longest engagement — delivered and maintained SharePoint solutions for the national healthcare and social care inspectorate.",
+          "Delivered and maintained .NET and SharePoint solutions for the Swedish Health and Social Care Inspectorate (IVO).",
       },
       {
         role: "SharePoint Consultant & On-site Support",
@@ -106,7 +117,7 @@ export const en: Translations = {
       {
         role: "Trainee SharePoint Developer",
         description:
-          "First professional role; built SharePoint solutions and grew core .NET development skills.",
+          "Six-month traineeship as part of my studies at Nackademin; built SharePoint solutions and grew core .NET development skills.",
       },
     ],
   },
@@ -114,17 +125,10 @@ export const en: Translations = {
     sectionLabel: "PERSONAL PROJECTS",
     ownershipNote: "Full ownership — requirements · UI/UX · development · hosting · maintenance",
     entries: {
-      akerogarden: {
-        status: "LIVE",
-        ownership:
-          "Full ownership — requirements · architecture · UI/UX · development · infrastructure · maintenance",
-        description:
-          "A booking and administration system for a rural retreat in Norrtälje, replacing a decommissioned CMS. Built solo in .NET 10 Blazor — a static-rendered public site with a guest booking funnel, and an interactive admin panel covering the full booking lifecycle, pricing rules, meals, facilities and cleaning. Wrote the requirements specification myself and designed the data model around it, with GDPR-driven retention, consent and audit handling. Runs on Azure infrastructure defined entirely in Bicep, deployed through Azure DevOps pipelines, and covered by unit, integration and Playwright end-to-end tests.",
-      },
       marnarsay: {
         status: "LIVE",
         description:
-          "A complete web application for a local choir to create, store, and edit hymns, and assemble printed programmes for services. Built solo in Blazor with a custom data model for hymn structure and programme composition. Actively used.",
+          "A complete web application for a local choir to create, store and edit hymns, and assemble printed programmes for services. Built solo in Blazor with a custom data model for hymn structure and programme composition. Actively used.",
       },
       voltio: {
         status: "LIVE",
@@ -140,9 +144,12 @@ export const en: Translations = {
   },
   employment: {
     sectionLabel: "EMPLOYMENT",
+    periods: ["Jun 2019 – present", "Aug 2013 – Jun 2019"],
   },
   education: {
     sectionLabel: "EDUCATION",
+    period: "Aug 2011 – Jan 2013",
+    programme: "SharePoint Development",
     certifications: "CERTIFICATIONS",
     certs: [
       "Core Solutions of Microsoft SharePoint Server 2013 (70-331, MCTS)",
@@ -175,7 +182,7 @@ export const en: Translations = {
   },
   contact: {
     sectionLabel: "CONTACT",
-    title: "Senior Full-Stack Developer",
+    title: "Senior Full-Stack .NET Developer",
     emailLabel: "Email",
     phoneLabel: "Phone",
     linkedinLabel: "LinkedIn",
