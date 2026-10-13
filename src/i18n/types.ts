@@ -63,5 +63,6 @@ export type Translations = {
     emailLabel: string;
     phoneLabel: string;
     linkedinLabel: string;
+    githubLabel: string;
   };
 };

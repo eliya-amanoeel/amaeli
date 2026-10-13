@@ -161,5 +161,6 @@ export const sv: Translations = {
     emailLabel: "E-post",
     phoneLabel: "Telefon",
     linkedinLabel: "LinkedIn",
+    githubLabel: "GitHub",
   },
 };

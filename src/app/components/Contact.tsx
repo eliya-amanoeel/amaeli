@@ -53,6 +53,7 @@ export function Contact() {
           <ContactRow label={t.contact.emailLabel} href="mailto:eliya.amanoeel@gmail.com" display="eliya.amanoeel@gmail.com" />
           <ContactRow label={t.contact.phoneLabel} href="tel:+46702068908" display="+46 70-206 89 08" />
           <ContactRow label={t.contact.linkedinLabel} href="https://www.linkedin.com/in/eliya-amanoeel/" display="linkedin.com/in/eliya-amanoeel" external />
+          <ContactRow label={t.contact.githubLabel} href="https://github.com/eliya-amanoeel" display="github.com/eliya-amanoeel" external />
         </div>
 
       </div>

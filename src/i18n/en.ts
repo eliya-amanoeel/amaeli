@@ -189,5 +189,6 @@ export const en: Translations = {
     emailLabel: "Email",
     phoneLabel: "Phone",
     linkedinLabel: "LinkedIn",
+    githubLabel: "GitHub",
   },
 };
