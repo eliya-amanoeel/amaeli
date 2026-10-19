@@ -36,7 +36,7 @@ export const sv: Translations = {
     entries: {
       "forsvarsmakten-inventeringsportalen": {
         role: "Ledande .NET-utvecklare",
-        description: "Ledande utvecklare för Inventeringsportalen, en Blazor Server-applikation i .NET 10 som chefer inom hela Försvarsmakten använder för att hålla sina personaluppgifter i linje med Active Directory. Byggd AI-först inom organisationens regler för AI-användning, med Claude som parprogrammerare. Jag designade lösningen enligt Clean Architecture kring en domänmodell som själv upprätthåller inventeringsreglerna, byggde single sign-on med rollbaserad åtkomst, och levererade administrationsverktyg för dataimport, referensdata och kontrollerade inventeringsperioder. Driftsätts via Azure DevOps-pipelines, täcks av xUnit- och Playwright-tester (end-to-end) och testades med fiktiv data när den var färdigbyggd.",
+        description: "Ledande utvecklare för Inventeringsportalen, en Blazor Server-applikation i .NET 10 som chefer inom hela Försvarsmakten använder för att hålla sina personaluppgifter i linje med Active Directory. Byggd AI-först inom organisationens regler för AI-användning, med Claude som parprogrammerare. Jag designade lösningen enligt Clean Architecture kring en domänmodell som själv upprätthåller inventeringsreglerna, byggde single sign-on med rollbaserad åtkomst, och levererade administrationsverktyg för dataimport, referensdata och kontrollerade inventeringsperioder. Driftsätts via Azure DevOps-pipelines, täcks av xUnit- och Playwright-tester (end-to-end) och verifierades i sin helhet mot fiktiv data inför driftstart.",
         period: "2026 – nu",
       },
       akerogarden: {
@@ -53,7 +53,7 @@ export const sv: Translations = {
         description: "Designade och byggde en skräddarsydd migrationsplattform från grunden i C# och .NET för att flytta Trafikverkets SharePoint-miljöer från 2010 till 2016: två WinForms-skrivbordsapplikationer för export och import, sammankopplade via ett XML-transformeringslager och byggda på SharePoints klientobjektmodell (CSOM). Tillsammans hanterade de allt innehåll, all struktur och metadata i över 2 000 webbplatssamlingar (site collections) i flera komplexa miljöer.",
       },
       receptkontroll: {
-        role: ".NET & SharePoint-utvecklare",
+        role: ".NET- & SharePoint-utvecklare",
         description: "Ledande utvecklare för ReceptKontroll — en plattform byggd för Inspektionen för vård och omsorg (IVO) för att övervaka narkotikaförskrivningar och upptäcka potentiell överförskrivning. Utvecklade ny funktionalitet i C# på SharePoint Server 2007, byggde och underhöll BizTalk-integrationslagret mot E-hälsomyndigheten, samt ansvarade för hela releasecykeln under sex år.",
       },
     },
@@ -93,7 +93,7 @@ export const sv: Translations = {
       { role: "PowerShell-utvecklare", description: "Automatiserade operativa arbetsflöden via PowerShell åt Skatteverket." },
       { role: "Kravanalytiker", description: "Fångade upp och strukturerade tekniska krav åt Valmyndigheten." },
       { role: "SharePoint Online-utvecklare", description: "Utvecklade SharePoint Online-funktioner för CGI:s interna, globala samarbetsplattform." },
-      { role: ".NET & SharePoint-utvecklare", description: "Levererade och underhöll .NET- och SharePoint-lösningar för Inspektionen för vård och omsorg (IVO)." },
+      { role: ".NET- & SharePoint-utvecklare", description: "Levererade och underhöll .NET- och SharePoint-lösningar för Inspektionen för vård och omsorg (IVO)." },
       { role: "SharePoint-konsult & support på plats", description: "SharePoint-konsultation och support på plats hos en av Sveriges största tjänstepensionsförvaltare." },
       { role: "Trainee SharePoint-utvecklare", description: "Sex månaders praktik (LIA) inom min utbildning vid Nackademin — byggde SharePoint-lösningar och lade grunden för .NET-utveckling." },
     ],
@@ -109,6 +109,11 @@ export const sv: Translations = {
       voltio: {
         status: "LIVE",
         description: "Marknadswebbplats för ett startupbolag grundat av två elektriker. Designad och byggd från ax till limpa — från layout och innehåll till driftsättning.",
+      },
+      homerack: {
+        status: "HOBBY",
+        ownership: "Hobbyprojekt — för att lära mig Proxmox · nätverk · self-hosting",
+        description: "Jag har lärt mig hur ett hemmalabb fungerar genom att bygga ett eget. Jag har satt upp ett Proxmox-kluster med tre noder i ett 3D-printat 10-tumsrack och flyttat mina webbplatser dit från Windows Server och IIS, även den här. På vägen har jag lärt mig Linux, Docker och nätverkskonfiguration, och satt upp en Raspberry Pi bredvid klustret för DNS-filtrering med Pi-hole, VPN med WireGuard, reverse proxy och övervakning. Varje beslut och varje runbook dokumenteras löpande. Byggt tillsammans med Claude Code.",
       },
       firmware: {
         status: "PÅGÅR",
@@ -127,8 +132,8 @@ export const sv: Translations = {
     programme: "SharePoint-utveckling",
     certifications: "CERTIFIERINGAR",
     certs: [
-      "Core Solutions of Microsoft SharePoint Server 2013 (70-331, MCTS)",
-      "Programming in HTML5 with JavaScript and CSS3 (70-480, MCSD)",
+      "Core Solutions of Microsoft SharePoint Server 2013 (70-331)",
+      "Programming in HTML5 with JavaScript and CSS3 (70-480)",
     ],
   },
   spokenLanguages: {
@@ -152,7 +157,7 @@ export const sv: Translations = {
     sectionLabel: "PERSONEN BAKOM KODEN",
     paragraphs: [
       "Jag sjunger. Sedan 2008 har jag varit med i en lokal kör i Södertälje — solist ända från början, och körledare sedan 2021. Det är också för den kören jag byggde kor.marnarsay.se — programverktyget längre upp kom ur ett problem jag satt med själv.",
-      "Resten av tiden går åt till teknik i mer handfast form. Jag 3D-printar och designar en hel del av modellerna själv, och gillar DIY-projekt som blandar 3D-printade delar, kretskort och assemblerprogrammering. Och så finns det alltid något hemma som ska fixas eller lagas — jag har svårt att låta bli.",
+      "Resten av tiden går åt till teknik i mer handfast form. Jag 3D-printar och designar en hel del av modellerna själv, bland annat racket som mitt hemmalabb står i, och gillar DIY-projekt som blandar 3D-printade delar, kretskort och assemblerprogrammering. Och så finns det alltid något hemma som ska fixas eller lagas — jag har svårt att låta bli.",
     ],
   },
   contact: {

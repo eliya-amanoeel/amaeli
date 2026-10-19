@@ -31,6 +31,13 @@ const projectsMeta: ProjectMeta[] = [
     tags: ["React", "Figma", "GitHub Copilot"],
   },
   {
+    id: "homerack",
+    name: "homerack",
+    links: [{ kind: "source", url: "https://github.com/eliya-amanoeel/homerack" }],
+    statusColor: "var(--app-accent)",
+    tags: ["Proxmox VE", "Linux", "Raspberry Pi", "Pi-hole", "WireGuard", "Docker", "Caddy", "Bash", "GitHub Actions", "Claude Code"],
+  },
+  {
     id: "firmware",
     name: "Hardware & Mobile — Stealth",
     statusColor: "var(--app-blue)",

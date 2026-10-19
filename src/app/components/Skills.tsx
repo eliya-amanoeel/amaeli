@@ -4,10 +4,10 @@ import { useT } from "../../context/LanguageContext";
 
 const skillNames = [
   ["OpenAI API", "Claude", "Claude Code", "GitHub Copilot", "Prompt Engineering"],
-  ["Microsoft 365", "Azure", "Active Directory", "Blazor", "Angular", "WinForms", "SQL Server", "PostgreSQL", "EF Core", "SharePoint SE", "SharePoint Online", "SharePoint 2016", "SharePoint 2013", "SharePoint 2010", "SharePoint 2007"],
-  ["C#", ".NET", "ASP.NET", "MVC", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS", "React", "XML", "C++"],
-  ["Azure DevOps", "Bicep", "IaC", "Redis", "Visual Studio", "VS Code", "Figma", "TFS", "Git", "BizTalk", "DocAve"],
-  ["Clean Architecture", "TDD", "xUnit", "SpecFlow", "Playwright", "E2E Testing", "Integration Testing", "GDPR / Data Protection", "Accessibility (WCAG)", "REST APIs", "CI/CD", "Scrum", "Agile"],
+  ["Microsoft 365", "Azure", "Active Directory", "Linux", "Proxmox VE", "Blazor", "Angular", "WinForms", "SQL Server", "PostgreSQL", "EF Core", "SharePoint SE", "SharePoint Online", "SharePoint 2016", "SharePoint 2013", "SharePoint 2010", "SharePoint 2007"],
+  ["C#", ".NET", "ASP.NET", "MVC", "CSOM", "JSOM", "PowerShell", "JavaScript", "SQL", "HTML", "CSS", "React", "XML", "C++", "Bash"],
+  ["Azure DevOps", "Bicep", "IaC", "Redis", "Visual Studio", "VS Code", "Figma", "TFS", "Git", "GitHub Actions", "Docker", "Caddy", "Pi-hole", "WireGuard", "BizTalk", "DocAve"],
+  ["Clean Architecture", "TDD", "xUnit", "SpecFlow", "Playwright", "E2E Testing", "Integration Testing", "GDPR / Data Protection", "Accessibility (WCAG)", "REST APIs", "CI/CD", "Scrum", "Agile", "Networking", "Self-Hosting", "Decision Records (ADR)"],
 ];
 
 export function Skills() {

@@ -3,7 +3,7 @@ import { TechTag } from "./TechTag";
 import { useT } from "../../context/LanguageContext";
 
 const FULL_NAME = "Eliya Amanoeel";
-const keySkills = ["C#", ".NET", "Blazor", "Azure", "Claude Code", "Azure DevOps", "Angular", "React", "PowerShell", "SharePoint"];
+const keySkills = ["C#", ".NET", "Blazor", "Azure", "Claude Code", "Azure DevOps", "Angular", "React", "PowerShell", "SharePoint", "Linux", "Proxmox VE", "Docker", "GitHub Actions"];
 
 export function Hero() {
   const { t } = useT();

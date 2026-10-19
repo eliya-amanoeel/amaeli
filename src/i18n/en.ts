@@ -37,7 +37,7 @@ export const en: Translations = {
       "forsvarsmakten-inventeringsportalen": {
         role: "Lead .NET Developer",
         description:
-          "Lead developer on Inventeringsportalen, a .NET 10 Blazor Server application that managers across the Swedish Armed Forces use to keep their staff records in line with Active Directory. Built AI-first within the organisation's rules for AI use, with Claude as a pair programmer. I designed the solution in Clean Architecture around a domain model that enforces the inventory rules itself, built single sign-on with role-based access, and delivered admin tooling for data imports, reference data and controlled inventory periods. Deployed through Azure DevOps pipelines, covered by xUnit and Playwright end-to-end tests, and tested against fictional data once complete.",
+          "Lead developer on Inventeringsportalen, a .NET 10 Blazor Server application that managers across the Swedish Armed Forces use to keep their staff records in line with Active Directory. Built AI-first within the organisation's rules for AI use, with Claude as a pair programmer. I designed the solution in Clean Architecture around a domain model that enforces the inventory rules itself, built single sign-on with role-based access, and delivered admin tooling for data imports, reference data and controlled inventory periods. Deployed through Azure DevOps pipelines, covered by xUnit and Playwright end-to-end tests, and verified end to end against fictional data ahead of go-live.",
       },
       akerogarden: {
         role: "Sole .NET Developer & Architect",
@@ -137,6 +137,12 @@ export const en: Translations = {
         description:
           "Marketing website for a startup founded by two electricians. Designed and built end-to-end — from layout and content to deployment.",
       },
+      homerack: {
+        status: "HOBBY",
+        ownership: "Hobby project — learning Proxmox · networking · self-hosting",
+        description:
+          "I learned how a home lab works by building one. I set up a three-node Proxmox cluster in a 3D-printed 10\" rack and moved my websites to it from Windows Server and IIS, this site included. Along the way I learned Linux, Docker and network configuration, and set up a Raspberry Pi beside the cluster for DNS filtering with Pi-hole, VPN with WireGuard, reverse proxying and monitoring. Every decision and runbook is written down as I go. Built together with Claude Code.",
+      },
       firmware: {
         status: "IN PROGRESS",
         ownership: "Software ownership — firmware · mobile app · website · hardware by my partner",
@@ -155,8 +161,8 @@ export const en: Translations = {
     programme: "SharePoint Development",
     certifications: "CERTIFICATIONS",
     certs: [
-      "Core Solutions of Microsoft SharePoint Server 2013 (70-331, MCTS)",
-      "Programming in HTML5 with JavaScript and CSS3 (70-480, MCSD)",
+      "Core Solutions of Microsoft SharePoint Server 2013 (70-331)",
+      "Programming in HTML5 with JavaScript and CSS3 (70-480)",
     ],
   },
   spokenLanguages: {
@@ -179,8 +185,8 @@ export const en: Translations = {
   about: {
     sectionLabel: "THE PERSON BEHIND THE CODE",
     paragraphs: [
-      "I sing. I've been part of a local choir in Södertälje since 2008 — a soloist from the very start, and its choir leader since 2021. It's also the choir I built kor.marnarsay.se for — the programme tool further up came out of a problem I was sitting with myself.",
-      "The rest of my time goes to technology in a more hands-on form. I 3D-print and design a fair share of the models myself, and I enjoy DIY projects that mix printed parts, circuit boards and assembly programming. And there's always something at home that needs fixing — I find it hard to leave alone.",
+      "I sing. I've been part of a local choir in Södertälje since 2008 — a soloist from the very start, and its choir leader since 2021. It's also the choir I built kor.marnarsay.se for — the programme tool further up came out of a problem I had myself.",
+      "The rest of my time goes to technology in a more hands-on form. I 3D-print and design a fair share of the models myself, the rack my home lab runs in among them, and I enjoy DIY projects that mix printed parts, circuit boards and assembly programming. And there's always something at home that needs fixing — I find it hard to leave things alone.",
     ],
   },
   contact: {
