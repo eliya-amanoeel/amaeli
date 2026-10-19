@@ -115,11 +115,6 @@ export const sv: Translations = {
         ownership: "Hobbyprojekt — för att lära mig Proxmox · nätverk · self-hosting",
         description: "Jag har lärt mig hur ett hemmalabb fungerar genom att bygga ett eget. Jag har satt upp ett Proxmox-kluster med tre noder i ett 3D-printat 10-tumsrack och flyttat mina webbplatser dit från Windows Server och IIS, även den här. På vägen har jag lärt mig Linux, Docker och nätverkskonfiguration, och satt upp en Raspberry Pi bredvid klustret för DNS-filtrering med Pi-hole, VPN med WireGuard, reverse proxy och övervakning. Varje beslut och varje runbook dokumenteras löpande. Byggt tillsammans med Claude Code.",
       },
-      firmware: {
-        status: "PÅGÅR",
-        ownership: "Ägarskap för mjukvaran — firmware · mobilapp · webbplats · hårdvara av min partner",
-        description: "Ett projekt i produktfas inom outdoor och jakthundar — samutvecklat med en partner. Projektet omfattar specialanpassad hårdvara med firmware skriven i C++, parkopplad med en mobilapplikation. AI-modeller är centrala i utvecklingsprocessen, vilket gör att två personer effektivt kan arbeta tvärfunktionellt med både inbäddade system och mobilutveckling.",
-      },
     },
   },
   employment: {

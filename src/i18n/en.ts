@@ -143,12 +143,6 @@ export const en: Translations = {
         description:
           "I learned how a home lab works by building one. I set up a three-node Proxmox cluster in a 3D-printed 10\" rack and moved my websites to it from Windows Server and IIS, this site included. Along the way I learned Linux, Docker and network configuration, and set up a Raspberry Pi beside the cluster for DNS filtering with Pi-hole, VPN with WireGuard, reverse proxying and monitoring. Every decision and runbook is written down as I go. Built together with Claude Code.",
       },
-      firmware: {
-        status: "IN PROGRESS",
-        ownership: "Software ownership — firmware · mobile app · website · hardware by my partner",
-        description:
-          "A product-stage venture in the field of outdoor sports and hunting dogs — co-developed with a partner. Involves custom hardware with firmware written in C++, paired with a companion mobile application. AI models are central to how this is being built, enabling two people to work effectively across embedded systems and mobile development.",
-      },
     },
   },
   employment: {

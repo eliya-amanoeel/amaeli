@@ -37,12 +37,6 @@ const projectsMeta: ProjectMeta[] = [
     statusColor: "var(--app-accent)",
     tags: ["Proxmox VE", "Linux", "Raspberry Pi", "Pi-hole", "WireGuard", "Docker", "Caddy", "Bash", "GitHub Actions", "Claude Code"],
   },
-  {
-    id: "firmware",
-    name: "Hardware & Mobile — Stealth",
-    statusColor: "var(--app-blue)",
-    tags: ["C++", "Flutter", "Figma", "OpenAI API", "Claude"],
-  },
 ];
 
 export function PersonalProjects() {
